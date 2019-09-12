@@ -1,0 +1,527 @@
+@font-face {
+    font-family: SouthwestSans;
+    src: url('/fonts/SouthwestSans-Light.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: SouthwestSans;
+    src: url('/fonts/SouthwestSans-LightItalic.otf');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: SouthwestSans;
+    src: url('/fonts/SouthwestSans-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: SouthwestSans;
+    src: url('/fonts/SouthwestSans-Italic.otf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: SouthwestSans;
+    src: url('/fonts/SouthwestSans-Medium.otf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: SouthwestSans;
+    src: url('/fonts/SouthwestSans-MediumItalic.otf');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: SouthwestSans;
+    src: url('/fonts/SouthwestSans-Bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: SouthwestSans;
+    src: url('/fonts/SouthwestSans-BoldItalic.otf');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: SouthwestSans;
+    src: url('/fonts/SouthwestSans-Black.otf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: SouthwestSans;
+    src: url('/fonts/SouthwestSans-BlackItalic.otf');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: SouthwestSansW01;
+    src: url('/fonts/SouthwestSansW01-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: SouthwestSansW01;
+    src: url('/fonts/SouthwestSansW01-LightIt.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: SouthwestSansW01;
+    src: url('/fonts/SouthwestSansW01-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: SouthwestSansW01;
+    src: url('/fonts/SouthwestSansW01-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: SouthwestSansW01;
+    src: url('/fonts/SouthwestSansW01-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: SouthwestSansW01;
+    src: url('/fonts/SouthwestSansW01-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: SouthwestSansW01;
+    src: url('/fonts/SouthwestSansW01-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: SouthwestSansW01;
+    src: url('/fonts/SouthwestSansW01-BlackIt.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: SouthwestSansW04;
+    src: url('/fonts/SouthwestSansW04-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: SouthwestSansW04;
+    src: url('/fonts/SouthwestSansW04-LightIt.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: SouthwestSansW04;
+    src: url('/fonts/SouthwestSansW04-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: SouthwestSansW04;
+    src: url('/fonts/SouthwestSansW04-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: SouthwestSansW04;
+    src: url('/fonts/SouthwestSansW04-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: SouthwestSansW04;
+    src: url('/fonts/SouthwestSansW04-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: SouthwestSansW04;
+    src: url('/fonts/SouthwestSansW04-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: SouthwestSansW04;
+    src: url('/fonts/SouthwestSansW04-BlackIt.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+* html .clearFix {
+	height: 1%;
+}
+{
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
+.clearFix::after {
+	height: 0px; clear: both; display: block; visibility: hidden; content: ".";
+}
+
+div.loginDiv {
+	margin-bottom: 10px;
+	width: 60%;
+	float: left;
+}
+div.alternateLoginDiv
+{
+	float: left;
+	width: 40%;
+}
+
+div.alternateLoginDiv a
+{
+	margin-left: 40px;
+	display: inline-block;
+	padding: 12px 10px;
+	text-decoration: none;
+	background-color: #304CCB;
+	color: #FFF;
+	width: 80%;
+	font-size: 1.3em;
+	font-weight: 100;
+}
+div.alternateLoginDiv .fa-chevron-right
+{
+	float: right;
+	margin-top: 5px;
+	font-size: 10px;
+}
+.cwaLink
+{
+	margin-bottom: 15px;
+	margin-top: 90px;
+
+}
+.loginButtons
+{
+	margin-top: 20px;
+}
+
+.logoutDiv{
+	text-align: center;
+}
+.submitButton,
+.returnButton
+{
+	float: right;
+	background-color: #FFBF27;
+	padding: 10px 20px;
+	border: none;
+	color: #333;
+	font-weight: 700;
+	-webkit-appearance: none;
+	border-radius: 0;
+	font-size: 1.2em;
+}
+
+.returnButton{
+	float: none;
+	margin: 10px 0;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.forgotButton
+{
+	display: inline-block;
+	color: #304CCB;
+	text-decoration: none;
+	padding: 10px 0;
+}
+
+div.centerPoint {
+	width: 60%;
+	background-color: rgba(255, 255, 255, .85);
+	border-top: 5px solid #ffbf27;
+    top: 25%;
+	left: 50%;
+	transform: translateX(-50%);
+    position: absolute;
+	padding: 30px;
+}
+
+input.input{
+    width: 100%;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    height: 40px;
+    font-size: 1.4em;
+    padding: 0px 10px;
+}
+
+label
+{
+	margin-top: 10px;
+	display: inline-block;
+}
+.loginDivHeader
+{
+	color: #1a2c80;
+	font-size: 3em;
+	font-weight: 100;
+}
+
+.logoutHeader,
+.level2Text,
+.level3Text
+{
+	text-align: center;
+	color: #1a2c80;
+	font-size: 5em;
+	font-weight: 100;
+	margin-bottom: 20px;
+}
+.level2Text
+{
+	font-size: 2em;
+	margin-bottom: 10px;
+}
+.level3Text
+{
+	font-size: 1.5em;
+}
+
+.bold
+{
+	font-weight: bold;
+}
+
+
+.eipNoDisplay {
+	width: 0px; height: 0px; overflow: hidden; display: none;
+}
+div.group {
+	margin: 0px 0px 0.3em; padding: 0px; width: 90%; float: left; white-space: nowrap;
+}
+div.label {
+	width: 40%; text-align: right; line-height: 1.6em; overflow: hidden; padding-right: 5px; font-weight: bold; float: left; white-space: nowrap;
+}
+
+div.pswResetImage {
+	left: 100px; width: 24px; float: left; position: relative;
+}
+div.pswResetText {
+	left: 110px; top: 10px; position: relative;
+}
+a.pswReset {
+	color: white; font-family: arial, helvetica, sans-serif; font-size: 1em; font-weight: bold; text-decoration: none;
+}
+a.pswReset:visited {
+	color: white; font-family: arial, helvetica, sans-serif; font-size: 1em; font-weight: bold; text-decoration: none;
+}
+a.pswReset:active {
+	color: white; font-family: arial, helvetica, sans-serif; font-size: 1em; font-weight: bold; text-decoration: none;
+}
+a.pswReset:hover {
+	color: rgb(255, 204, 0); font-family: arial, helvetica, sans-serif; font-weight: bold; text-decoration: none;
+}
+div.altLogin {
+	background-image: url("/assets/images/login_background.jpg"); background-repeat: no-repeat;
+}
+div.altNoticeText {
+	color: rgb(55, 82, 133); font-weight: bold; margin-left: 35px;
+}
+div.altDirectLoginText {
+	color: rgb(55, 82, 133); font-weight: normal; margin-left: 35px;
+}
+div.altTempText {
+	color: rgb(55, 82, 133);
+}
+a.altLoginButton:hover {
+	border-style: outset; color: rgb(255, 204, 0); background-color: rgb(51, 102, 204);
+}
+img.altLoginButton {
+	
+}
+a.swaAltHover {
+	color: rgb(255, 204, 0); font-family: arial, helvetica, sans-serif; font-size: 1em; font-weight: bold; text-decoration: none; background-color: transparent;
+}
+a.swaAltHover:visited {
+	color: rgb(255, 204, 0); font-family: arial, helvetica, sans-serif; font-size: 1em; font-weight: bold; text-decoration: none; background-color: transparent;
+}
+a.swaAltHover:active {
+	color: rgb(255, 204, 0); font-family: arial, helvetica, sans-serif; font-size: 1em; font-weight: bold; text-decoration: none; background-color: transparent;
+}
+a.swaAltHover:hover {
+	color: rgb(225, 13, 35); font-family: arial, helvetica, sans-serif; font-weight: bold; text-decoration: none; background-color: transparent;
+}
+a.forgotButton:hover {
+	text-decoration: underline;
+}
+div.center {
+	padding: 0px; width: 100%; text-align: center; font-size: 1.2em;
+}
+input.keepAliveInput {
+	border-width: 0px; margin: 5px; text-align: center; color: rgb(253, 254, 255); font-size: 14pt; font-weight: bold; background-color: transparent;
+}
+div.keepAliveTitle {
+	width: 100%; text-align: center; font-size: 14pt; font-weight: bold;
+}
+div.keepAliveMessage {
+	width: 90%; color: rgb(255, 204, 0); font-family: Tahoma, Arial, Helvetica; font-weight: bold; margin-left: 5%;
+}
+div.keepAliveButton {
+	left: 15%; width: 90%; text-align: center; bottom: 10%; position: absolute;
+}
+div.eipOKMessages {
+	margin: 2em; padding: 1em; border: 1px solid rgb(0, 51, 153); border-image: none; color: rgb(0, 51, 153); clear: both;
+}
+div.eipErrors {
+	margin: 2em; padding: 1em; border: 1px solid rgb(0, 51, 153); border-image: none; color: rgb(0, 51, 153); clear: both;
+}
+div.eipErrors {
+	background-position: 3px 3px; border: 3px solid rgb(240, 47, 65); text-align: left; color: rgb(240, 47, 65); padding-top: 0.5em; padding-bottom: 0.5em; padding-left: 3em; background-image: url("../eipImages/error.gif"); background-repeat: no-repeat; background-color: white;
+}
+div.eipOKMessages {
+	background-position: 5px 5px; border: 3px solid green; text-align: left; color: green; padding-top: 0.5em; padding-bottom: 0.5em; padding-left: 3em; background-image: url("../eipImages/correct.gif"); background-repeat: no-repeat; background-color: white;
+}
+.okText {
+	width: 90%; color: green; font-weight: bold; margin-left: 0em;
+}
+.errorsHeader {
+	margin: 0px; padding: 0px; font-weight: bold;
+}
+.errorsFooter {
+	margin: 0px; padding: 0px; font-weight: bold;
+}
+.errorsText {
+	margin: 0px 0px 0px 1em; padding: 0px;
+}
+body {
+	font-family: SouthwestSans,Arial,Helvetica,sans-serif;
+	background: url('/assets/images/login_background.png') no-repeat center center fixed; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+	bottom: 0;
+	background-size:cover;
+}
+div.resizeableBackground {
+	left: 0px; top: 0px; position: fixed;
+}
+div.loginThemeLoginTopDiv {
+	left: 1px; top: 1px; position: relative;
+}
+div.loginThemeLoginBottomDiv {
+	left: 0px; top: 0px; position: relative;
+}
+div.loginThemePageTopDiv {
+	background-position: top; top: 0px; width: 100%; height: 1px; position: absolute; background-image: url("/eipNoAuth/swalife/eipImages/login/loginThemePageTop.jpg"); background-attachment: fixed; background-repeat: no-repeat;
+}
+div.loginThemePageBottomDiv {
+	background-position: bottom; width: 100%; height: 100%; bottom: 0px; position: absolute; background-image: url("/eipNoAuth/swalife/eipImages/login/loginThemePageBottom.jpg"); background-attachment: fixed; background-repeat: no-repeat;
+}
+
+@media all and (min-width:0px) and (max-width:1024px) {
+
+	div.centerPoint {
+		width: 95%;
+	}
+
+	div.loginDiv,
+	div.alternateLoginDiv
+	{
+		width: 100%;
+		float: none;
+	}
+	
+	div.alternateLoginDiv
+	{
+		margin-top: 40px;
+	}
+	
+	div.alternateLoginDiv a
+	{
+		float: left;
+		margin: 0;
+		width: 45%;
+	}
+	
+	.removeBR
+	{
+		display: none;
+	}
+	
+	
+	div.alternateLoginDiv .cwaLink
+	{
+		margin: 0 10% 0 0;
+	}
+}
+
+@media all and (max-height: 500px) {
+	div.centerPoint {
+		top: 5%;
+	}
+}
+
+@media all and (orientation: portrait), all and (max-width:600px) {
+	div.centerPoint {
+		top: 5%;
+	}
+
+	div.centerPoint.inactivityDiv {
+		padding: 0 5px 0 5px;
+	}
+
+	div.alternateLoginDiv a
+	{
+		width: 100%;
+	}
+
+	.removeBR
+	{
+		display: block;
+	}
+	
+	
+	div.alternateLoginDiv .cwaLink
+	{
+		margin: 0 10% 15px 0;
+
+	}
+	
+	.logoutHeader {
+		font-size: 4em;
+	}
+	
+	
+
+}
