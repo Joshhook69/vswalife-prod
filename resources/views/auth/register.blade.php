@@ -45,7 +45,7 @@
   			</div>
   			 <div class="form-group">
                 <label for="vatsim_cid">{{ __('Vatsim CID') }}</label>
-                <input style="opacity:.69;" id="vatsim_cid" type="text" class="form-control @error('CID') is-invalid @enderror" name="CID" value="{{ old('CID') }}" required autocomplete="Vatsim CID" autofocus>
+                <input style="opacity:.69;" id="vatsim_cid" type="text" class="form-control @error('CID') is-invalid @enderror" name="vatsim_cid" value="{{ old('CID') }}" required autocomplete="vatsim_cid" autofocus>
             @error('Vatsim CID')
         		<span class="invalid-feedback" role="alert">
         			<strong>{{ $message }}</strong>
