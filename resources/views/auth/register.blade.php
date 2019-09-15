@@ -43,6 +43,15 @@
     			<label for="password-confirm">{{ __('Confirm Password') }}</label>
     			<input style="opacity:.69;" id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
   			</div>
+  			 <div class="form-group">
+                <label for="vatsim_cid">{{ __('Vatsim CID') }}</label>
+                <input style="opacity:.69;" id="vatsim_cid" type="text" class="form-control @error('CID') is-invalid @enderror" name="CID" value="{{ old('CID') }}" required autocomplete="Vatsim CID" autofocus>
+            @error('Vatsim CID')
+        		<span class="invalid-feedback" role="alert">
+        			<strong>{{ $message }}</strong>
+        		</span>
+        	@enderror
+            </div>
   			<div class="form-row align-items-center">
   			<div class="col-auto my-1" style="display: inline-block;">
       		<label class="mr-sm-2" for="crew_base" value="crew_base">Crew Base Preference</label>
