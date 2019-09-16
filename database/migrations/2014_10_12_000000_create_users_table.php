@@ -1,11 +1,9 @@
-<?php
+<?php 
+use Illuminate\Support\Facades\Schema; 
+use Illuminate\Database\Schema\Blueprint; 
+use Illuminate\Database\Migrations\Migration; 
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
-
-class CreateUsersTable extends Migration
-{
+class CreateUsersTable extends Migration {
     /**
      * Run the migrations.
      *
@@ -17,13 +15,17 @@ class CreateUsersTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('swa_id', '7');
+            $table->string('crew_base', '9')->nullable(true)->default(null);
+            $table->integer('dispatcher')->default(0);
+            $table->integer('staff')->default(0);
+            $table->integer('vatsim_cid')->default(null);
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      *
