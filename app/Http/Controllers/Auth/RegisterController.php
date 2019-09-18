@@ -53,7 +53,7 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'crew_base' => ['required', 'string', 'min:3|max:9'],
-	    'vatsim_cid' => ['required', 'string', 'min:6|max:9'],
+            'vatsim_cid' => ['required', 'string', 'min:6|max:9'],
         ]);
     }
 
@@ -70,7 +70,7 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'crew_base' => $data['crew_base'],
-	    'vatsim_cid' => $data['vatsim_cid']
+            'vatsim_cid' => $data['vatsim_cid']
         ]);
     }
 }
