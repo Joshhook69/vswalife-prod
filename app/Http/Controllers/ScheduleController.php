@@ -14,7 +14,7 @@ class ScheduleController extends Controller {
 				$schedule = Schedule::paginate(50);
 				return view('schedule.index')->with('schedule', $schedule);
 			}else{
-				return redirect('/')->withError(['msg', 'Unauthorized!']);
+				return redirect('/')->with(['msg', 'Unauthorized!']);
 			}
 		}else{
 			return redirect('/')->with(['message', 'User not logged in!']);
