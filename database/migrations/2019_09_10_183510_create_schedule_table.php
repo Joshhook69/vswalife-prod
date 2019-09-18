@@ -6,11 +6,7 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateScheduleTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+   
     public function up()
     {
         Schema::create('schedule', function (Blueprint $table) {
