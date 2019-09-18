@@ -16,14 +16,14 @@ class CreateScheduleTable extends Migration
         Schema::create('schedule', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('ident', 9);
-	    $table->string('actual_ident', 9)->nullable(true)->default(null);
-	    $table->integer('departuretime');
-	    $table->integer('arrivaltime');
-	    $table->string('origin', 4);
-	    $table->string('destination', 4);
-	    $table->string('aircrafttype', 4);
-	    $table->string('meal_service', 24);
-	    $table->timestamps();
+            $table->string('actual_ident', 9)->nullable(true)->default(null);
+            $table->integer('departuretime');
+            $table->integer('arrivaltime');
+            $table->string('origin', 4);
+            $table->string('destination', 4);
+            $table->string('aircrafttype', 4);
+            $table->string('meal_service', 24);
+            $table->timestamps();
         });
     }
 
