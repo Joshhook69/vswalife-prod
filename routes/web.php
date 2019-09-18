@@ -11,9 +11,6 @@
 |
 */
 
-/*Route::get('/', function () {
-    return view('welcome');
-});*/
 Route::get('/', 'FrontController@index');
 Route::get('/fleet', 'FleetController@index');
 Auth::routes();
