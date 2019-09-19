@@ -1,181 +1,181 @@
 @font-face {
     font-family: SouthwestSans;
-    src: url('/fonts/SouthwestSans-Light.otf');
+    src: url('/assets/fonts/SouthwestSans-Light.otf');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: SouthwestSans;
-    src: url('/fonts/SouthwestSans-LightItalic.otf');
+    src: url('/assets/fonts/SouthwestSans-LightItalic.otf');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: SouthwestSans;
-    src: url('/fonts/SouthwestSans-Regular.otf');
+    src: url('/assets/fonts/SouthwestSans-Regular.otf');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: SouthwestSans;
-    src: url('/fonts/SouthwestSans-Italic.otf');
+    src: url('/assets/fonts/SouthwestSans-Italic.otf');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: SouthwestSans;
-    src: url('/fonts/SouthwestSans-Medium.otf');
+    src: url('/assets/fonts/SouthwestSans-Medium.otf');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: SouthwestSans;
-    src: url('/fonts/SouthwestSans-MediumItalic.otf');
+    src: url('/assets/fonts/SouthwestSans-MediumItalic.otf');
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
     font-family: SouthwestSans;
-    src: url('/fonts/SouthwestSans-Bold.otf');
+    src: url('/assets/fonts/SouthwestSans-Bold.otf');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: SouthwestSans;
-    src: url('/fonts/SouthwestSans-BoldItalic.otf');
+    src: url('/assets/fonts/SouthwestSans-BoldItalic.otf');
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
     font-family: SouthwestSans;
-    src: url('/fonts/SouthwestSans-Black.otf');
+    src: url('/assets/fonts/SouthwestSans-Black.otf');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: SouthwestSans;
-    src: url('/fonts/SouthwestSans-BlackItalic.otf');
+    src: url('/assets/fonts/SouthwestSans-BlackItalic.otf');
     font-weight: 900;
     font-style: italic;
 }
 
 @font-face {
     font-family: SouthwestSansW01;
-    src: url('/fonts/SouthwestSansW01-Light.woff') format('woff');
+    src: url('/assets/fonts/SouthwestSansW01-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: SouthwestSansW01;
-    src: url('/fonts/SouthwestSansW01-LightIt.woff') format('woff');
+    src: url('/assets/fonts/SouthwestSansW01-LightIt.woff') format('woff');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: SouthwestSansW01;
-    src: url('/fonts/SouthwestSansW01-Regular.woff') format('woff');
+    src: url('/assets/fonts/SouthwestSansW01-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: SouthwestSansW01;
-    src: url('/fonts/SouthwestSansW01-Italic.woff') format('woff');
+    src: url('/assets/fonts/SouthwestSansW01-Italic.woff') format('woff');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: SouthwestSansW01;
-    src: url('/fonts/SouthwestSansW01-Bold.woff') format('woff');
+    src: url('/assets/fonts/SouthwestSansW01-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: SouthwestSansW01;
-    src: url('/fonts/SouthwestSansW01-BoldItalic.woff') format('woff');
+    src: url('/assets/fonts/SouthwestSansW01-BoldItalic.woff') format('woff');
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
     font-family: SouthwestSansW01;
-    src: url('/fonts/SouthwestSansW01-Black.woff') format('woff');
+    src: url('/assets/fonts/SouthwestSansW01-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: SouthwestSansW01;
-    src: url('/fonts/SouthwestSansW01-BlackIt.woff') format('woff');
+    src: url('/assets/fonts/SouthwestSansW01-BlackIt.woff') format('woff');
     font-weight: 900;
     font-style: italic;
 }
 
 @font-face {
     font-family: SouthwestSansW04;
-    src: url('/fonts/SouthwestSansW04-Light.woff') format('woff');
+    src: url('/assets/fonts/SouthwestSansW04-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: SouthwestSansW04;
-    src: url('/fonts/SouthwestSansW04-LightIt.woff') format('woff');
+    src: url('/assets/fonts/SouthwestSansW04-LightIt.woff') format('woff');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: SouthwestSansW04;
-    src: url('/fonts/SouthwestSansW04-Regular.woff') format('woff');
+    src: url('/assets/fonts/SouthwestSansW04-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: SouthwestSansW04;
-    src: url('/fonts/SouthwestSansW04-Italic.woff') format('woff');
+    src: url('/assets/fonts/SouthwestSansW04-Italic.woff') format('woff');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: SouthwestSansW04;
-    src: url('/fonts/SouthwestSansW04-Bold.woff') format('woff');
+    src: url('/assets/fonts/SouthwestSansW04-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: SouthwestSansW04;
-    src: url('/fonts/SouthwestSansW04-BoldItalic.woff') format('woff');
+    src: url('/assets/fonts/SouthwestSansW04-BoldItalic.woff') format('woff');
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
     font-family: SouthwestSansW04;
-    src: url('/fonts/SouthwestSansW04-Black.woff') format('woff');
+    src: url('/assets/fonts/SouthwestSansW04-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: SouthwestSansW04;
-    src: url('/fonts/SouthwestSansW04-BlackIt.woff') format('woff');
+    src: url('/assets/fonts/SouthwestSansW04-BlackIt.woff') format('woff');
     font-weight: 900;
     font-style: italic;
 }
