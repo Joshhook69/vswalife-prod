@@ -6,7 +6,6 @@
     <h1 class="display-4" style="text-align:center; margin-top:5%; background-color:#F9F9F9;">Roster</h1>
 </div>
 </div>
-
 	<table class="table table-borderless">
 		<thead>
 			<tr>
@@ -18,7 +17,6 @@
 			</tr>
 		</thead>
 		<tbody>
-
 			@foreach($users as $u)
 				<tr>
 					<td>{{$u->name}}</td>
@@ -34,7 +32,6 @@
 		       		       </td>
 				</tr>
 			@endforeach
-
 		</tbody>
 	</table>
 	@endsection
