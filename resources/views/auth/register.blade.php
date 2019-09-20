@@ -1,5 +1,4 @@
 @extends('master')
-
 @section('content')
 	<div class="container" style="margin-top:10%; background-image: url('/assets/images/registration-logo.jpg'); background-size: cover;
 	background-repeat: no-repeat; background-size:cover;">
@@ -16,7 +15,6 @@
         		</span>
         	@enderror
             </div>
-
             <div class="form-group">
                 <label for="email">{{ __('E-Mail Address') }}</label>
                 <input style="opacity:.69;" id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
@@ -27,7 +25,6 @@
                 </span>
                 @enderror
             </div>
-
             <div class="form-group">
     			<label for="password">{{ __('Password') }}</label>
     			<input style="opacity:.69;" id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
@@ -38,7 +35,6 @@
     			</span>
     			@enderror
   			</div>
-
   			<div class="form-group">
     			<label for="password-confirm">{{ __('Confirm Password') }}</label>
     			<input style="opacity:.69;" id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
