@@ -17,7 +17,7 @@ class ScheduleController extends Controller {
 				return redirect('/')->with(['msg', 'Unauthorized!']);
 			}
 		}else{
-			return redirect('/')->with(['message', 'User not logged in!']);
+			return redirect('/')->with('message', 'User not logged in!');
 		}
     }
 }

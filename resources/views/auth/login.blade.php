@@ -3,9 +3,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-
 	<title>vSWALife Login Page</title>
 	<META Http-equic="CACHE-CONTROL" CONTENT="NO-CACHE">
+	<link href='/assets/css/font-awesome.css' rel="styleSheet" type="text/css">
 	<link href='/assets/css/loginStyles.css' rel="styleSheet" type="text/css">
 	<link href='/assets/css/loginbutton.css' rel="stylesheet" type="text/css">
 	<style>
@@ -17,23 +17,17 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 	<script src="https://kit.fontawesome.com/ce18f40218.js"></script>
 		<script>
-
 		function goSubmit() {
 			submitForm();
-
 			document.swalifeLoginForm.submit();
 		}
-
 		function loginLog(msg) {
 			if (window.console) {
 				console.log(msg);
 			}
 		}
-
 	</script>
-
 </head>
-
 <body>
 	<div class="centerPoint">
 		<div class="loginDiv">
@@ -67,7 +61,6 @@
 						@enderror
 						<br>
 					</div>
-
 					<div class="loginButtons">
 						@if (Route::has('password.request'))
                         <a class="forgotButton" href="{{ route('password.request') }}">Forgot Password?</a>
@@ -96,7 +89,6 @@
 			<a href="/">Home <i class="fa fa-chevron-right" style="font-size:0.8em;"></i></a>
 			<br>
 		</div>
-
 	</div>
 </body>
 </html
