@@ -6,16 +6,16 @@
 
 	<title>vSWALife Login Page</title>
 	<META Http-equic="CACHE-CONTROL" CONTENT="NO-CACHE">
-
-	<link href='/assets/css/font-awesome.css' rel="styleSheet" type="text/css">
 	<link href='/assets/css/loginStyles.css' rel="styleSheet" type="text/css">
+	<link href='/assets/css/loginbutton.css' rel="stylesheet" type="text/css">
 	<style>
 		@font-face {
 			font-family: SouthwestSans,Arial,Helvetica,sans-serif;
-			src: url(/assets/fonts/Southwest-Bold.otf);
+			src: url('/assets/fonts/SouthwestSans-Bold.otf');
 		}
 	</style>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<script src="https://kit.fontawesome.com/ce18f40218.js"></script>
 		<script>
 
 		function goSubmit() {
@@ -75,7 +75,16 @@
                         <input type="checkbox" style="margin-left:100px;" class="form-check-input" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
     					<label class="form-check-label" type="checkbox"  style="color:#304CCB;">{{ __('Remember Me') }}</label>
     					<!-- Login Button -->
-                        <button type="submit" style="float:right; border-radius:0px; background-color:#FFBF27; font-size:1.3em; font-weight: 300; font-style:italic; display:inline-block; color:white; border-color:#FFBF27; padding:7.5px 16px; font-family: SouthwestSans,Arial,Helvetica,sans-serif;"class="btn btn-primary">
+                        <button type="submit" style="float:right; border-radius:0px; background-color:#FFBF27;
+                    	font-size:1.3em; font-weight: 300; font-style:italic; display:inline-block; color:black; border-color:#FFBF27; padding:7.5px 16px; font-family: SouthwestSans,Arial,Helvetica,sans-serif;align-items:center;
+						  justify-content:center;
+						  transition: background .2s linear;
+						    transition-property: background;
+						    transition-duration: 0.2s;
+						    transition-timing-function: linear;
+						    transition-delay: 0s;
+						    	"class="btn btn-primary">
+                        	<i class="fas fa-angle-double-right"></i>
                             {{ __('Login') }}
                         </button>
 					</div>

@@ -1,0 +1,23 @@
+
+.form .div .submit {
+	float:right;
+	border-radius:1px;
+	background-color:#FFBF27;
+	font-size:1.3em;
+	font-weight:300;
+	font-style:italic;
+	display:inline-block;
+	border-color:#FFBF27;
+	padding:7.5px 16px;
+	font-family:SouthwestSans,Arial,Helvetica,sans-serif;
+	align-items:center;
+	justify-content:center;
+	transition:background .2s linear;
+	transition-property:background;
+	transition-duration:0.2s;
+	transition-timing-function: linear;
+	transition-delay: 0s;
+}
+.submit:hover {
+	color:#FFBF27;
+}
