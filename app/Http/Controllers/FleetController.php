@@ -12,7 +12,7 @@ class FleetController extends Controller
     	$fleet = fleet::all();
     	return view('site.fleet')->with('fleet', $fleet);
     }else{
-    	return redirect('/')->withErrors(['msg', 'Not Authorized']);
+    	return redirect('/')->withErrors('msg', 'Not Authorized');
     }
 }
 }
