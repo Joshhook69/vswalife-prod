@@ -11,7 +11,7 @@ class DispatchController extends Controller
     {
       if(Auth::user()->dispatcher == 1){
      return view('site.dispatch');
-   }else{
+    }else{
      return redirect('/')->withErrors(['msg', 'Not Authorized']);
    }
 }
