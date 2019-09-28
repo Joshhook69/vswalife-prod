@@ -8,8 +8,9 @@ class CommandmentsController extends Controller
 {
     public function index() 
     {
-    	return view('site.commandments');
+    return view('site.commandments');
     }
+    
     public function test()
     {
 	return view('site.test');
