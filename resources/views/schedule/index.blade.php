@@ -18,6 +18,7 @@
         <th scope="col">Origin</th>
         <th scope="col">Destination</th>
         <th scope="col">Aircraft Type</th>
+	<th scope="col"></th>
       </tr>
     </thead>
     <tbody>
@@ -29,6 +30,7 @@
     		<td>{{$s->origin}}</td>
     		<td>{{$s->destination}}</td>
     		<td>{{$s->aircrafttype}}</td>
+		<td><a href="#" class="bookbutton">Book<a/></td>
     	</tr>
     	@endforeach
     </tbody>

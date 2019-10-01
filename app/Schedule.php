@@ -12,17 +12,17 @@ class Schedule extends Model
     protected $fillable = [
     	'ident', 'departuretime', 'arrivaltime', 'origin', 'destination', 'aircrafttype' 
 	];
-	
+
 	public function getDepartureTime() {
 		$carbon = new \Carbon\Carbon();
 		$date = $carbon->createFromTimestamp($this->departuretime);
 		return $date->format('m/d/Y @ H:i');
 	}
-	
+
 	public function getArrivalTime() {
 		$carbon = new \Carbon\Carbon();
 		$date = $carbon->createFromTimestamp($this->arrivaltime);
 		return $date->format('m/d/Y @ H:i');
 	}
-	
+
 }
