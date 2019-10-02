@@ -36,3 +36,7 @@ Route::prefix('api')->group(function() {
         Route::get('/all/{departure}/{arrival}', 'Api\ScheduleController@searchByArrAndDep');
     });
 });
+Route::get('/clear-cache', function() {
+	Artisan::call('cache:clear');
+	return "Cache is cleared";
+});

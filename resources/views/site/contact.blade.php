@@ -1,4 +1,4 @@
-@extends('master')
+@extends('light')
 @section('title', 'Welcome')
 @section('content')
 <div class="container">

@@ -1,4 +1,4 @@
-@extends('master')
+@extends('light')
 @section('content')
 <div class="container">
 <div class="jumbotron jumbotron-fluid" style="background-color:#F9F9F9;">

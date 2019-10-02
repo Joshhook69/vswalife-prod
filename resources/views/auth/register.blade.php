@@ -1,4 +1,4 @@
-@extends('master')
+@extends('light')
 @section('content')
 	<div class="container" style="margin-top:10%; background-image: url('/assets/images/registration-logo.jpg'); background-size: cover;
 	background-repeat: no-repeat; background-size:cover;">

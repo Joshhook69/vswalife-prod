@@ -1,4 +1,4 @@
-@extends('master')
+@extends('light')
 @section('content')
 <div class="container" style="margin-top:5%;">
 <link rel="stylesheet" type="text/css" href="/assets/css/search.css">

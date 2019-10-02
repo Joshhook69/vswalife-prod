@@ -1,4 +1,4 @@
-@extends('master')
+@extends('light')
 @section('content')
 <body>
 	<div class="container" style="margin-top:10%;">

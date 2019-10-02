@@ -3,10 +3,10 @@
 	<title>
 	    vSWALife - @yield('title')
 	</title>
-	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>-->
-	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 	<link href="{{ asset('/assets/css/bookbutton.css') }}" rel="stylesheet">
 	<script src="{{ asset('js/app.js') }}" defer></script>
@@ -22,26 +22,9 @@
   gtag('config', 'UA-139396030-1');
 </script>
 <script src="https://kit.fontawesome.com/ce18f40218.js"></script>
-<style>
-	.navbar {
-		background-color:#3453C4;
-	}
-	.nav-link {
-		color:white;
-	}
-	.nav-link:hover {
-		color:white;
-		box-shadow: 0 2px rgba(0,0,0,0.15);
-		transform: scale(1.1, 1.1);
-		transition: box-shadow 0.4s ease-in-out;
-	}
-	body {
-		background-color:#3453C4;
-		}
-</style>
 </head>
 <body>
-	<nav class="navbar navbar-expand-sm fixed-top">
+	<nav class="navbar navbar-expand-sm navbar-light fixed-top">
 		<a class="navbar-brand" href="/">
 			<img src="/assets/images/nav_logo.png" alt="Logo" style="width:100px; height:100px;">
 		</a>

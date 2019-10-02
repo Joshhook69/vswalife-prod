@@ -1,15 +1,14 @@
-@extends('master')
+@extends('light')
 @section('title', 'Welcome')
 @section('content')
 <div class="container">
 <div class="jumbotron jumbotron-fluid" style="padding-bottom:0; background-color:#F9F9F9;">
-  Fleet
   <div class="container">
     <h1 class="display-4" style="text-align:center;  margin-right:10%; margin-top:5%;">Fleet</h1>
     </div>
   </div>
 <div class="container">
-<table class="table">
+<table class="table table-borderless">
   <thead>
     <tr>
         <th scope="col">Registration</th>
