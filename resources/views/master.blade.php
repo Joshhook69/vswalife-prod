@@ -27,6 +27,7 @@
 		background-color:#3453C4;
 	}
 	.nav-link {
+		padding-left:10px;
 		color:white;
 	}
 	.nav-link:hover {
