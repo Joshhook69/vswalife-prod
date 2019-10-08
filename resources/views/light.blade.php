@@ -24,12 +24,13 @@
 <script src="https://kit.fontawesome.com/ce18f40218.js"></script>
 </head>
 <body>
+	<div class="container">
 	<nav class="navbar navbar-expand-sm navbar-light fixed-top">
-		<a class="navbar-brand" href="/">
-			<img src="/assets/images/nav_logo.png" alt="Logo" style="width:100px; height:100px;">
+		<a class="navbar-brand" href="/" style="margin-left:20%;">
+			<img src="/assets/images/nav_logo_old.png" alt="Logo" style="width:100px; height:100px;">
 		</a>
 
-		<ul class="navbar-nav ml-auto">
+		<ul class="navbar-nav ml-auto" style="margin-right:11%;">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
 					<span class="navbar-toggler-icon"></span>
 			</button>
@@ -97,6 +98,7 @@
 </ul>
 </div>
 </nav>
+</div>
 	@yield('content')
 </body>
 </html>

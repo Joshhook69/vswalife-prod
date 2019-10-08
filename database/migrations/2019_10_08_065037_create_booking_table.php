@@ -11,8 +11,9 @@ class CreateBookingTable extends Migration
      */
     public function up()
     {
-        Schema::create('bookings', function (Blueprint $table) {
+        Schema::create('booking', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('user_id');
             $table->string('origin')->nullable(false);
             $table->string('destination')->nullable(false);
             $table->longText('route')->nullable(false);

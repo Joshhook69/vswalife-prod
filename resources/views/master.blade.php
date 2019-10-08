@@ -7,7 +7,7 @@
 	<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+	<!--<link href="{{ asset('css/app.css') }}" rel="stylesheet">-->
 	<link href="{{ asset('/assets/css/bookbutton.css') }}" rel="stylesheet">
 	<script src="{{ asset('js/app.js') }}" defer></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -27,27 +27,30 @@
 		background-color:#3453C4;
 	}
 	.nav-link {
-		padding-left:10px;
 		color:white;
+		padding-left:10px;
 	}
 	.nav-link:hover {
 		color:white;
-		box-shadow: 0 2px rgba(0,0,0,0.15);
-		transform: scale(1.1, 1.1);
-		transition: box-shadow 0.4s ease-in-out;
+		box-shadow: 0 2px white;
+		transition: box-shadow 0.2s ease-in-out;
 	}
 	body {
 		background-color:#3453C4;
 		}
+	.nav-item li {
+		padding-left:10px;
+	}
 </style>
 </head>
 <body>
+	<div class="container">
 	<nav class="navbar navbar-expand-sm fixed-top">
-		<a class="navbar-brand" href="/">
+		<a class="navbar-brand" href="/" style="margin-left:20%;">
 			<img src="/assets/images/nav_logo.png" alt="Logo" style="width:100px; height:100px;">
 		</a>
 
-		<ul class="navbar-nav ml-auto">
+		<ul class="navbar-nav ml-auto" style="margin-right:11%;">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
 					<span class="navbar-toggler-icon"></span>
 			</button>
