@@ -31,7 +31,8 @@
         <td>{{$f->delivery}}</td>
         <td>{{$f->status}}</td>
       <tr>
-      @endforeach
+      @endforeach 
+     <!-- {{ dump($fleet) }} -->
   </tbody>
 </table>
 </div>

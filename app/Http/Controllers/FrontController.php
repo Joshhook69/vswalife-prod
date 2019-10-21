@@ -15,4 +15,8 @@ class FrontController extends Controller
     {
 	return view('site.contact');
     }
+    public function staff ()
+    {
+	return view('site.staff');
+    }
 }

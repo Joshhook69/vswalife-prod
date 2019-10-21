@@ -41,6 +41,9 @@
 			<li class="nav-item">
 				<a class="nav-link" href="/register">Register</a>
 			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/staff">Staff</a>
+			</li>
 			@endguest
 			@auth
 			<li class="nav-item">

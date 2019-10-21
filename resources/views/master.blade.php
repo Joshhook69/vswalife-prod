@@ -73,7 +73,9 @@
 			<li class="nav-item">
 				<a class="nav-link" href="/roster">Roster</a>
 			</li>
-
+			<li class="nav-item">
+				<a class="nav-link" href="/staff">Staff</a>
+			</li>
 			<!-- Logout -->
 			@auth
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">

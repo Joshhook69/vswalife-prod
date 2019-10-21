@@ -11,7 +11,7 @@ class ScheduleController extends Controller {
     public function index() {
 		if(Auth::check()){
 			if(auth()->user()->staff == 1){
-				$schedule = Schedule::paginate(50);
+				$schedule = Schedule::paginate(5);
 				return view('schedule.index')->with('schedule', $schedule);
 			}else{
 				return redirect('/')->with(['msg', 'Unauthorized!']);
