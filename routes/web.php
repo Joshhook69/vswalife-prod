@@ -24,6 +24,7 @@ Route::get('/dispatch', 'DispatchController@index');
 Route::get('/schedule', 'ScheduleController@index');
 Route::get('/booking', 'BookingController@index');
 Route::get('/staff', 'FrontController@staff');
+Route::get('/pdc', 'FrontController@pdc');
 
 Route::prefix('admin')->middleware('auth')->group(function(){
 	Route::post('/airports', 'Admin\AirportController@store');

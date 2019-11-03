@@ -10,7 +10,7 @@ class FleetController extends Controller
 {
     public function index() {
     	if(Auth::user()){
-    	$fleet = Fleet::paginate(5);
+    	$fleet = Fleet::paginate(50);
     	return view('site.fleet')->with('fleet', $fleet);
     }else{
     	return redirect('/')->withErrors('msg', 'Not Authorized');

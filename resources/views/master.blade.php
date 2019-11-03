@@ -11,38 +11,37 @@
 	<link href="{{ asset('/assets/css/bookbutton.css') }}" rel="stylesheet">
 	<script src="{{ asset('js/app.js') }}" defer></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139396030-1"></script>
-<meta name="csrf-token" content="{{ csrf_token() }}">
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151368309-1"></script>
+	<meta name="csrf-token" content="{{ csrf_token() }}">
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
-
-  gtag('config', 'UA-139396030-1');
-</script>
-<script src="https://kit.fontawesome.com/ce18f40218.js"></script>
-<style>
-	.navbar {
-		background-color:#3453C4;
-	}
-	.nav-link {
-		color:white;
-		padding-left:10px;
-	}
-	.nav-link:hover {
-		color:white;
-		box-shadow: 0 2px white;
-		transition: box-shadow 0.2s ease-in-out;
-	}
-	body {
-		background-color:#3453C4;
+	  gtag('config', 'UA-151368309-1');
+	</script>
+	<script src="https://kit.fontawesome.com/ce18f40218.js"></script>
+	<style>
+		.navbar {
+			background-color:#3453C4;
 		}
-	.nav-item li {
-		padding-left:10px;
-	}
-</style>
-</head>
+		.nav-link {
+			color:white;
+			padding-left:10px;
+		}
+		.nav-link:hover {
+			color:white;
+			box-shadow: 0 2px white;
+			transition: box-shadow 0.2s ease-in-out;
+		}
+		body {
+			background-color:#3453C4;
+			}
+		.nav-item li {
+			padding-left:10px;
+		}
+	</style>
+	</head>
 <body>
 	<div class="container">
 	<nav class="navbar navbar-expand-sm fixed-top">

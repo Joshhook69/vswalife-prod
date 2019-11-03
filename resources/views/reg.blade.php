@@ -10,26 +10,25 @@
 	<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 	<link href="{{ asset('/assets/css/bookbutton.css') }}" rel="stylesheet">
 	<script src="{{ asset('js/app.js') }}" defer></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139396030-1"></script>
-<meta name="csrf-token" content="{{ csrf_token() }}">
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151368309-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
+	  gtag('config', 'UA-151368309-1');
+	</script>
 
-  gtag('config', 'UA-139396030-1');
-</script>
-<script src="https://kit.fontawesome.com/ce18f40218.js"></script>
-<style>
-	.navbar-light .navbar-nav .nav-link {
-		color:white;
-	}
-	label {
-		color:white;
-	}
-	</style>
+	<meta name="csrf-token" content="{{ csrf_token() }}">
+	<script src="https://kit.fontawesome.com/ce18f40218.js"></script>
+	<style>
+		.navbar-light .navbar-nav .nav-link {
+			color:white;
+		}
+		label {
+			color:white;
+		}
+		</style>
 </head>
 <body style="margin-top:10%; background-image: url('/assets/images/southwestatsunset.jpg'); background-size: cover; background-repeat: no-repeat;">
 	<div class="container">
