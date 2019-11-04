@@ -23,8 +23,8 @@
 	</head>
 <body>
 	<div class="container">
-	<nav class="navbar navbar-expand-sm navbar-light fixed-top">
-		<a class="navbar-brand" href="/" style="margin-left:20%;">
+	<nav class="navbar navbar-expand-sm navbar-light navbar-static-top">
+		<a class="navbar-brand" href="/" style="margin-left:5%;">
 			<img src="/assets/images/nav_logo_old.png" alt="Logo" style="width:100px; height:100px;">
 		</a>
 

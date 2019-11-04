@@ -1,0 +1,55 @@
+{
+    "DEFAULT": {
+        "climb_via": ".msg {callsign} FLIGHT {callsign}/{date} {dep} {arr} PDC {callsign} XPNDR {beacon} {dep} {type} P{p_time} {cruise} {dep} {route} {arr} {remarks} EDCT CLEARED {sid} DEPARTURE {tran} TRSN CLIMB VIA SID EXP {cruise} 10 MIN AFT DP,DPFRQ {dep_freq} END OF MESSAGE",
+        "maintain": ".msg {callsign} FLIGHT {callsign}/{date} {dep} {arr} PDC {callsign} XPNDR {beacon} {dep} {type} P{p_time} {cruise} {dep} {route} {arr} {remarks} EDCT CLEARED {sid} DEPARTURE {tran} TRSN MAINTAIN {top_alt}FT EXP {cruise} 10 MIN AFT DP,DPFRQ {dep_freq} END OF MESSAGE"
+    },
+    "KDAL": {
+        "climb_via": ".msg {callsign} FLIGHT {callsign}/{date} {dep} {arr} PDC {callsign} XPNDR {beacon} {dep} {type} P{p_time} {cruise} {dep} {route} {arr} {remarks} EDCT CLEARED {sid} DEPARTURE {tran} TRSN CLIMB VIA SID EXP {cruise} 10 MIN AFT DP,DPFRQ {dep_freq} SWA GATES 1,2,4,19,20 CTC ATC FOR PUSH | ALL OTHERS CTC ATC WHEN READY TO TAXI END OF MESSAGE",
+        "maintain": ".msg {callsign} FLIGHT {callsign}/{date} {dep} {arr} PDC {callsign} XPNDR {beacon} {dep} {type} P{p_time} {cruise} {dep} {route} {arr} {remarks} EDCT CLEARED {sid} DEPARTURE {tran} TRSN MAINTAIN {top_alt}FT EXP {cruise} 10 MIN AFT DP,DPFRQ {dep_freq} SWA GATES 1,2,4,19,20 CTC ATC FOR PUSH | ALL OTHERS CTC ATC WHEN READY TO TAXI END OF MESSAGE"
+    },
+    "KOKC": {
+        "climb_via": ".msg {callsign} FLIGHT {callsign}/{date} {dep} {arr} PDC {callsign} XPNDR {beacon} {dep} {type} P{p_time} {cruise} {dep} {route} {arr} {remarks} EDCT CLEARED {sid} DEPARTURE {tran} TRSN CLB VIA SID EXC MAINT 5000FT EXP {cruise} 10 MIN AFT DP,DPFRQ {dep_freq} CONTACT GROUND FOR TAXI END OF MESSAGE",
+        "maintain": ".msg {callsign} FLIGHT {callsign}/{date} {dep} {arr} PDC {callsign} XPNDR {beacon} {dep} {type} P{p_time} {cruise} {dep} {route} {arr} {remarks} EDCT CLEARED {sid} DEPARTURE {tran} TRSN CLB VIA SID EXC MAINT 5000FT EXP {cruise} 10 MIN AFT DP,DPFRQ {dep_freq} CONTACT GROUND FOR TAXI END OF MESSAGE"
+    },
+    "KDEN": {
+        "climb_via": ".msg {callsign} FLIGHT {callsign}/{date} {dep} {arr} PDC {callsign} XPNDR {beacon} {dep} {type} P{p_time} {cruise} {dep} {route} {arr} {remarks} EDCT CLEARED {sid} DEPARTURE {tran} TRSN CLIMB VIA SID EXP {cruise} 10 MIN AFT DP,DPFRQ {dep_freq} END OF MESSAGE",
+        "maintain": ".msg {callsign} FLIGHT {callsign}/{date} {dep} {arr} PDC {callsign} XPNDR {beacon} {dep} {type} P{p_time} {cruise} {dep} {route} {arr} {remarks} EDCT CLEARED DEN1 DEPARTURE MAINTAIN 10000FT EXP {cruise} 10 MIN AFT DP,DPFRQ {dep_freq} END OF MESSAGE"
+    },
+    "KSTL": {
+        "climb_via": ".msg {callsign} FLIGHT {callsign}/{date} {dep} {arr} PDC {callsign} XPNDR {beacon} {dep} {type} P{p_time} {cruise} {dep} {route} {arr} {remarks} EDCT CLEARED {sid} DEPARTURE {tran} TRSN CLIMB VIA SID EXP {cruise} 10 MIN AFT DP,DPFRQ {dep_freq} SWA AND GA CTC {gnd_freq} TO TAXI ALL OTHERS CTC {gnd_freq} TO PUSH END OF MESSAGE",
+        "maintain": ".msg {callsign} FLIGHT {callsign}/{date} {dep} {arr} PDC {callsign} XPNDR {beacon} {dep} {type} P{p_time} {cruise} {dep} {route} {arr} {remarks} EDCT CLEARED {sid} DEPARTURE {tran} TRSN MAINTAIN {top_alt}FT EXP {cruise} 10 MIN AFT DP,DPFRQ {dep_freq} SWA AND GA CTC {gnd_freq} TO TAXI ALL OTHERS CTC {gnd_freq} TO PUSH END OF MESSAGE"
+    },
+    "KORD": {
+        "climb_via": ".msg {callsign} FLIGHT {callsign}/{date} {dep} {arr} PDC {callsign} XPNDR {beacon} {dep} {type} P{p_time} {cruise} {dep} {route} {arr} {remarks} EDCT CLEARED ORD5 DEPARTURE CLIMB VIA SID EXP {cruise} 10 MIN AFT DP,DPFRQ {dep_freq} CTC {gnd_freq} WITH GATE OR LOCATION WHEN READY TO TAXI END OF MESSAGE",
+        "maintain": ".msg {callsign} FLIGHT {callsign}/{date} {dep} {arr} PDC {callsign} XPNDR {beacon} {dep} {type} P{p_time} {cruise} {dep} {route} {arr} {remarks} EDCT CLEARED ORD5 DEPARTURE CLIMB VIA SID EXP {cruise} 10 MIN AFT DP,DPFRQ {dep_freq} CTC {gnd_freq} WITH GATE OR LOCATION WHEN READY TO TAXI END OF MESSAGE"
+    },
+    "KTUL": {
+        "climb_via": ".msg {callsign} FLIGHT {callsign}/{date} {dep} {arr} PDC {callsign} XPNDR {beacon} {dep} {type} P{p_time} {cruise} {dep} {route} {arr} {remarks} EDCT CLEARED TUL6 DEPARTURE FLY RWY HDG, EXP RADAR VECTORS MAINTAIN 15000FT CLIMB VIA SID EXP {cruise} 10 MIN AFT DP,DPFRQ {dep_freq} CTC GROUND {gnd_freq} FOR TAXI RAMP IS UNCONTROLLED END OF MESSAGE",
+        "maintain": ".msg {callsign} FLIGHT {callsign}/{date} {dep} {arr} PDC {callsign} XPNDR {beacon} {dep} {type} P{p_time} {cruise} {dep} {route} {arr} {remarks} EDCT CLEARED TUL6 DEPARTURE FLY RWY HDG, EXP RADAR VECTORS MAINTAIN {top_alt}FT CLIMB VIA SID EXP {cruise} 10 MIN AFT DP,DPFRQ {dep_freq} CTC GROUND {gnd_freq} FOR TAXI RAMP IS UNCONTROLLED END OF MESSAGE"
+    },
+    "KHOU": {
+        "climb_via": ".msg {callsign} FLIGHT {callsign}/{date} {dep} {arr} PDC {callsign} XPNDR {beacon} {dep} {type} P{p_time} {cruise} {dep} {route} {arr} {remarks} EDCT CLEARED {sid} DEPARTURE {tran} TRSN CLIMB VIA SID EXC MAINT 5000FT EXP {cruise} 10 MIN AFT DP,DPFRQ {dep_freq} TERM RAMP TFC AT ODD NUMBERED GATES 31-51 CTC {gnd_freq} FOR PUSH | ALL OTHERS CTC {gnd_freq} WHEN READY TO TAXI | END OF MESSAGE",
+        "maintain": ".msg {callsign} FLIGHT {callsign}/{date} {dep} {arr} PDC {callsign} XPNDR {beacon} {dep} {type} P{p_time} {cruise} {dep} {route} {arr} {remarks} EDCT CLEARED {sid} DEPARTURE {tran} TRSN EXC MAINT {top_alt}FT EXP {cruise} 10 MIN AFT DP,DPFRQ {dep_freq} TERM RAMP TFC AT ODD NUMBERED GATES 31-51 CTC {gnd_freq} FOR PUSH | ALL OTHERS CTC {gnd_freq} WHEN READY TO TAXI | END OF MESSAGE"
+    },
+    "KIAH": {
+        "climb_via": ".msg {callsign} FLIGHT {callsign}/{date} {dep} {arr} PDC {callsign} XPNDR {beacon} {dep} {type} P{p_time} {cruise} {dep} {route} {arr} {remarks} EDCT CLEARED {sid} DEPARTURE {tran} TRSN CLIMB VIA SID EXC MAINT 4000FT EXP {cruise} 10 MIN AFT DP,DPFRQ {dep_freq} TERM A THRU E CTC RAMP FOR PUSH CARGO OR FBO ACFT {gnd_freq} FOR TAXI END OF MESSAGE",
+        "maintain": ".msg {callsign} FLIGHT {callsign}/{date} {dep} {arr} PDC {callsign} XPNDR {beacon} {dep} {type} P{p_time} {cruise} {dep} {route} {arr} {remarks} EDCT CLEARED {sid} DEPARTURE {tran} TRSN MAINT {top_alt}FT EXP {cruise} 10 MIN AFT DP,DPFRQ {dep_freq} TERM A THRU E CTC RAMP FOR PUSH CARGO OR FBO ACFT {gnd_freq} FOR TAXI END OF MESSAGE"
+    },
+    "KSAT": {
+        "climb_via": ".msg {callsign} FLIGHT {callsign}/{date} {dep} {arr} PDC {callsign} XPNDR {beacon} {dep} {type} P{p_time} {cruise} {dep} {route} {arr} {remarks} EDCT CLEARED {sid} DEPARTURE {tran} TRSN FLY RWY HDG MAINTAIN 5000FT EXP {cruise} 10 MIN AFT DP,DPFRQ {dep_freq} END OF MESSAGE",
+        "maintain": ".msg {callsign} FLIGHT {callsign}/{date} {dep} {arr} PDC {callsign} XPNDR {beacon} {dep} {type} P{p_time} {cruise} {dep} {route} {arr} {remarks} EDCT CLEARED {sid} DEPARTURE {tran} TRSN FLY RWY HDG MAINTAIN {top_alt}FT EXP {cruise} 10 MIN AFT DP,DPFRQ {dep_freq} END OF MESSAGE",
+        "no_sid": ".msg {callsign} FLIGHT {callsign}/{date} {dep} {arr} PDC {callsign} XPNDR {beacon} {dep} {type} P{p_time} {cruise} {dep} {route} {arr} {remarks} EDCT NO SID FLY RWY HDG MAINTAIN 5000FT EXP {cruise} 10 MIN AFT DP,DPFRQ {dep_freq} END OF MESSAGE"
+    },
+    "KMSY": {
+        "climb_via": ".msg {callsign} FLIGHT {callsign}/{date} {dep} {arr} PDC {callsign} XPNDR {beacon} {dep} {type} P{p_time} {cruise} {dep} {route} {arr} {remarks} EDCT NO SID FLY RUNWAY HEADING MAINTAIN 4000FT EXP {cruise} 10 MIN AFT DP,DPFRQ {dep_freq} CONTACT GROUND {gnd_freq} FOR TAXI END OF MESSAGE",
+        "maintain": ".msg {callsign} FLIGHT {callsign}/{date} {dep} {arr} PDC {callsign} XPNDR {beacon} {dep} {type} P{p_time} {cruise} {dep} {route} {arr} {remarks} EDCT NO SID FLY RUNWAY HEADING MAINTAIN {top_alt}FT EXP {cruise} 10 MIN AFT DP,DPFRQ {dep_freq} CONTACT GROUND {gnd_freq} FOR TAXI END OF MESSAGE"
+    },
+    "KAUS": {
+        "climb_via": ".msg {callsign} FLIGHT {callsign}/{date} {dep} {arr} PDC {callsign} XPNDR {beacon} {dep} {type} P{p_time} {cruise} {dep} {route} {arr} {remarks} EDCT CLEARED {sid} DEPARTURE {tran} TRSN CLIMB ON TOWER ASSIGNED HEADING MAINTAIN 4000FT EXP {cruise} 10 MIN AFT DP,DPFRQ {dep_freq} CONTACT GROUND CONTROL FOR PUSH END OF MESSAGE",
+        "maintain": ".msg {callsign} FLIGHT {callsign}/{date} {dep} {arr} PDC {callsign} XPNDR {beacon} {dep} {type} P{p_time} {cruise} {dep} {route} {arr} {remarks} EDCT CLEARED {sid} DEPARTURE {tran} TRSN CLIMB ON TOWER ASSIGNED HEADING MAINTAIN {top_alt}FT EXP {cruise} 10 MIN AFT DP,DPFRQ {dep_freq} CONTACT GROUND CONTROL FOR PUSH END OF MESSAGE"
+    },
+    "KLIT": {
+        "climb_via": ".msg {callsign} FLIGHT {callsign}/{date} {dep} {arr} PDC {callsign} XPNDR {beacon} {dep} {type} P{p_time} {cruise} {dep} {route} {arr} {remarks} EDCT NO SID MAINTAIN 4000FT EXP {cruise} 10 MIN AFT DP,DPFRQ {dep_freq} CONTACT GROUND {gnd_freq} FOR TAXI PUSH BACK AT YOUR DISCRETION END OF MESSAGE",
+        "maintain": ".msg {callsign} FLIGHT {callsign}/{date} {dep} {arr} PDC {callsign} XPNDR {beacon} {dep} {type} P{p_time} {cruise} {dep} {route} {arr} {remarks} EDCT NO SID MAINTAIN {top_alt}FT EXP {cruise} 10 MIN AFT DP,DPFRQ {dep_freq} CONTACT GROUND {gnd_freq} FOR TAXI PUSH BACK AT YOUR DISCRETION END OF MESSAGE"
+    }
+}

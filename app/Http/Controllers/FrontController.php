@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class FrontController extends Controller
 {
@@ -22,6 +23,10 @@ class FrontController extends Controller
     }
     public function pdc	()
     {
+    if(Auth::user()){
 	return view('site.pdc');
+    }else{
+	return redirect('/')->withErrors('msg', 'Not Authorized');
     }
+}
 }
