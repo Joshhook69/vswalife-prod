@@ -24,11 +24,11 @@
 <body>
 	<div class="container">
 	<nav class="navbar navbar-expand-sm navbar-light navbar-static-top">
-		<a class="navbar-brand" href="/" style="margin-left:5%;">
+		<a class="navbar-brand" href="/">
 			<img src="/assets/images/nav_logo_old.png" alt="Logo" style="width:100px; height:100px;">
 		</a>
 
-		<ul class="navbar-nav ml-auto" style="margin-right:11%;">
+		<ul class="navbar-nav ml-auto" style="margin-right:5%;">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
 					<span class="navbar-toggler-icon"></span>
 			</button>
