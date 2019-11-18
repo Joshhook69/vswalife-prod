@@ -41,6 +41,12 @@
 			padding-left:10px;
 		}
 	</style>
+
+	@if(Carbon\Carbon::now()->month == 12)
+		{{-- Merry Christmas --}}
+		<script src="/assets/js/snowstorm.js"></script>
+	@endif
+
 	</head>
 <body>
 	<div class="container">
