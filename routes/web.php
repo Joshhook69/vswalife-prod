@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Input;
+use App\User;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,6 +27,24 @@ Route::get('/schedule', 'ScheduleController@index');
 Route::get('/booking', 'BookingController@index');
 Route::get('/staff', 'FrontController@staff');
 Route::get('/pdc', 'FrontController@pdc');
+
+Route::prefix('booking')->middleware('auth')->group(function(){
+	Route::get('/create', 'Booking\BookingController@create');
+});
+
+
+
+
+Route::post('/search', function(){
+     $q = Input::get('q');
+     if($q != ' '){
+	$user = User::where('name', 'LIKE', '%' . $q . '%')
+		->get();
+	if(count($user) > 0)
+		return view('front.index')->withDetails($user)->withQuery($q);
+     		}
+		return view('front.index')->withMessage("No Users found!");
+});
 
 Route::prefix('admin')->middleware('auth')->group(function(){
 	Route::post('/airports', 'Admin\AirportController@store');

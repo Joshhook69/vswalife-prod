@@ -44,6 +44,7 @@
 
 	@if(Carbon\Carbon::now()->month == 12)
 		{{-- Merry Christmas --}}
+	 {{-- Yes Jordan I found this from u and liked it :) --}}
 		<script src="/assets/js/snowstorm.js"></script>
 	@endif
 

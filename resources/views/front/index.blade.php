@@ -4,5 +4,39 @@
 	<h1 style="text-align:center; color:white;"> Dope stuff for vSWALife Coming Soon !</h1>
 	<h3 style="text-align:center; padding-top:5%; color:white"><a href="https://flightaware.com/live/fleet/SWA" 
 		target="_blank" style="color:white; text-decoration:underline;"> Live Southwest Airlines Operations</a></h3>
+@auth
+@if(Auth::user()->staff == 1)
+<form action="{{URL::to('/search')}}" method="POST" role="search">
+	{{ csrf_field() }}
+	<div class="input-group">
+	<input type="text" class="form-control" name="q"
+		placeholder="Not my best work but just playing with stuff"> <span class="input-group-btn">
+		<button type="submit" class="btn btn-default">
+		</button>
+		</span>
+	</div>
+	</form>
+@endif
+@endauth
+	@if(isset($details))
+	<p>The Search results for your query <b> {{ $query }} </b> are:</p>
+	<h2>Sample user details</h2>
+	<table class="table table-borderless">
+		<thead>
+		   <tr>
+		     <th>Name</th>
+		   </tr>
+		</thead>
+		<tbody>
+		@foreach($details as $user)
+		 <tr style="color:white;">
+		    <td>{{$user->name}}</td>
+		 </tr>
+		@endforeach
+		</tbody>
+	</table>
+	@elseif(isset($message))
+	<p>{{ $message }}</p>
+	@endif
 </div>
 @endsection

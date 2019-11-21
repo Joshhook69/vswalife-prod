@@ -16,6 +16,14 @@ class BookingController extends Controller {
         }
     }
 
+   /* public function create() {
+        if(Auth::user()){
+            return view('booking.create');
+        }else{
+            return redirect('/')->withErrors('msg', 'Not Authorized');
+        }
+    }
+    */
     public function getAll() {
         $bookings = Booking::all();
         return response()->json($bookings);
