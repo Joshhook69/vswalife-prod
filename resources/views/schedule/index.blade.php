@@ -29,7 +29,7 @@
     		<td>{{$s->origin}}</td>
     		<td>{{$s->destination}}</td>
     		<td>{{$s->aircrafttype}}</td>
-		<td><a href="#" class="bookbutton">Book<a/></td>
+		<td><a href="/booking/create" class="bookbutton">Book<a/></td>
     	</tr>
     	@endforeach
     </tbody>

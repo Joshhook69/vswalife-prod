@@ -29,7 +29,8 @@ Route::get('/staff', 'FrontController@staff');
 Route::get('/pdc', 'FrontController@pdc');
 
 Route::prefix('booking')->middleware('auth')->group(function(){
-	Route::get('/create', 'Booking\BookingController@create');
+	Route::get('/create', 'Booking\BookingController@createIndex');
+        Route::post('/create', 'Booking\BookingController@create');
 });
 
 
