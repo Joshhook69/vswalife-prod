@@ -20,7 +20,10 @@ Auth::routes();
 //Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/commandments', 'CommandmentsController@index');
 Route::get('/test', 'CommandmentsController@test');
+
 Route::get('/roster', 'RosterController@index');
+Route::get('/roster/{$id}/edit', 'RosterController@edit');
+
 Route::get('/contact', 'FrontController@contact');
 Route::get('/dispatch', 'DispatchController@index');
 Route::get('/schedule', 'ScheduleController@index');

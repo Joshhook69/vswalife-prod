@@ -13,6 +13,11 @@ class RosterController extends Controller
         return view('roster.index')->with('users', $users);
     }
 
+    public function edit($id) {
+	$users = User::findOrFail($id);
+	return view('roster.edit');
+    }
+
     public function destroy($id) {
     	$users = User::findOrFail($id);
     	$users->delete();
