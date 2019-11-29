@@ -7,15 +7,19 @@
 
 <form method="POST" action="/booking/create">
 	@csrf
+	Route
 	<div class="form-group">
 		<textarea class="form-control" name="route"></textarea>	
 	</div>
+	Origin
 	<div class="form-group">
 		<textarea class="form-control" name="origin"></textarea>	
 	</div>
+	Destination
 	<div class="form-group">
 		<textarea class="form-control" name="destination"></textarea>	
 	</div>
+	Altitude
 	<div class="form-group">
 		<textarea class="form-control" name="altitude"></textarea>	
 	</div>

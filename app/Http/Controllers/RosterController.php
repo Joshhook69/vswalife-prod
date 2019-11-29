@@ -13,9 +13,10 @@ class RosterController extends Controller
         return view('roster.index')->with('users', $users);
     }
 
-    public function edit($id) {
-	$users = User::findOrFail($id);
-	return view('roster.edit');
+    public function edit($id)
+    {
+	$users = User::find($id);
+	return view('roster.edit')->with('users', $users);
     }
 
     public function destroy($id) {

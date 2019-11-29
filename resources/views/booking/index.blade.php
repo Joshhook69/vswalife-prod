@@ -1,6 +1,6 @@
 @extends('light')
 @section('content')
-<div class="container" style="margin-top:5%;">
+<div class="container" style="margin-top:0%;">
 <link rel="stylesheet" type="text/css" href="/assets/css/search.css">
 <script src="/assets/js/search.js"></script>
 <div class="jumbotron jumbotron-fluid" style="background-color:#F9F9F9;">

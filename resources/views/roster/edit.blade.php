@@ -1,4 +1,7 @@
 @extends('light')
 @section('content')
-<h1>TEST</h1>
+<div class="container">
+{{ Form::open(['action' => ['RosterController@edit', $Users->id], 'method' => 'PUT']) }}
+dd(($Users->id));
+</div>
 @endsection
