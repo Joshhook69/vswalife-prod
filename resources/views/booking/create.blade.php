@@ -4,6 +4,12 @@
 <link rel="stylesheet" type="text/css" href="/assets/css/search.css">
 <script src="/assets/js/search.js"></script>
 
+@php
+	$arrival = Request::input('arr');
+	$departure = Request::input('dep');
+	$alt = Request::input('alt');
+@endphp
+
 <form method="POST" autocomplete="off" action="/booking/create">
 	@csrf
 	Rotue
@@ -15,18 +21,18 @@
     <div class="col-md-4 mb-3">
     	<div class="autocomplete"></div>
       <label for="validationServer01">Origin</label>
-      <input type="text" class="form-control is-valid" id="origin" name="origin" placeholder="Origin" value="" required>
+      <input type="text" class="form-control is-valid" id="origin" name="origin" placeholder="Origin" value="{{$departure}}" required>
   </div>
     <div class="col-md-4 mb-3">
     	<div class="autocomplete"></div>
       <label for="validationServer01">Destination</label>
-      <input type="text" class="form-control is-valid" id="destination" name="destination" placeholder="Destination" value="" required>
+      <input type="text" class="form-control is-valid" id="destination" name="destination" placeholder="Destination" value="{{$arrival}}" required>
   </div>
-</div>	
-	Altitude
-	<div class="form-group">
-		<textarea class="form-control" id="altitude" name="altitude"></textarea>	
-	</div>
+    <div class="col-md-4 mb-3">
+	<div class="autocomplete"></div>
+	<label for="validationServer01">Altitude</label>
+	<input type="text" class="form-control is-valid" id="altitude" name="altitude" placeholder="altitude" value="{{$alt}}" required>
+</div>
 
 	<button class="btn btn-primary" type="submit">Submit</button>
 </form>
