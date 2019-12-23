@@ -15,9 +15,12 @@
   <tbody>
     @foreach($booking as $b)
     <tr>
-      <td>No callsign yet</td>
+      <td>SWA{{$b->ident}}</td>
       <td>{{$b->origin}}</td>
       <td>{{$b->destination}}</td>
+      <td>Need to figure out</td>
+      <td>{{$b->altitude}}</td>
+      <td>{{$b->air_time}} Minutes</td>
     </tr>
     @endforeach
   </tbody>

@@ -27,15 +27,15 @@
     	@foreach($schedule as $s)
     	<tr>
     		<td><a href="https://flightaware.com/live/flight/SWA{{$s->ident}}">SWA{{$s->ident}}</td>
-		<td>{{$s->origin}}</td>
-		<td>{{$s->destination}}</td>
+		    <td>{{$s->origin}}</td>
+		    <td>{{$s->destination}}</td>
     		<td>{{$s->days}}</td>
     		<td>{{$s->distance}}</td>
-		<td>{{$s->flight_time}} Minutes</td>
+		    <td>{{$s->flight_time}} Minutes</td>
     		<td>{{$s->getDepartureTime()}}</td>
-		<td>{{$s->getArrivalTime()}}</td>
-		<td>{{$s->aircrafttype}}</td>
-		<td><a href="/booking/create?dep={{$s->origin}}&arr={{$s->destination}}&alt={{$s->altitude}}" class="bookbutton">Book<a/></td>
+		    <td>{{$s->getArrivalTime()}}</td>
+		    <td>{{$s->aircrafttype}}</td>
+		    <td><a href="/booking/create?ident={{$s->ident}}&dep={{$s->origin}}&arr={{$s->destination}}&alt={{$s->altitude}}" class="bookbutton">Book<a/></td>
     	</tr>
     	@endforeach
     </tbody>

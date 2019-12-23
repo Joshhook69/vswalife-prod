@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\Airport;
 
 class FrontController extends Controller
 {
@@ -30,9 +29,4 @@ class FrontController extends Controller
 	return redirect('/')->withErrors('Not Authorized');
     }
 }
-
-
-    public function airports (){
-        return view('site.airports');
-    }
 }

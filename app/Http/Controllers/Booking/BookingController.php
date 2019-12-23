@@ -34,13 +34,15 @@ class BookingController extends Controller
    */
 
     public function create(Request $request) {
-	if($request->has(['route', 'origin', 'destination', 'altitude'])) {
-        	$booking = new Booking;
+	if($request->has(['ident','route', 'origin', 'destination', 'altitude'])) {
+        $booking = new Booking;
 		$booking->user_id = auth()->user()->id;
+        $booking->ident = $request->input('ident');
 		$booking->route = $request->input('route');
 		$booking->origin = $request->input('origin');
 		$booking->destination = $request->input('destination');
 		$booking->altitude = $request->input('altitude');
+       // $booking->air_time = $request->input('air_time');
 		$booking->save();
 		return redirect()->back();
        // dd($booking);
@@ -54,7 +56,7 @@ class BookingController extends Controller
     public function view(){
         if(Auth::check()){
             if(Auth()->user()->can_fly >= 1){
-                $booking = Booking::all();
+                $booking = Booking::where('user_id', Auth()->user()->id)->get();
             return view('booking.view')->with('booking', $booking);
         }else{
                 return redirect('/')->withErrors('Not Authorized');

@@ -8,6 +8,7 @@
 	$arrival = Request::input('arr');
 	$departure = Request::input('dep');
 	$alt = Request::input('alt');
+	$ident = Request::input('ident');
 @endphp
 
 <form method="POST" autocomplete="off" action="/booking/create">
@@ -16,6 +17,12 @@
 	<div class="form-group">
 		<textarea class="form-control" name="route" id="route"></textarea>	
 	</div>
+
+	<div class="col-md-4 mb-3">
+    	<div class="autocomplete"></div>
+      <label for="validationServer01">Callsign</label>
+      <input type="text" class="form-control is-valid" id="ident" name="ident" placeholder="Callsign" value="{{$ident}}" required>
+  	</div>
 
 	<div class="form-row">
     <div class="col-md-4 mb-3">

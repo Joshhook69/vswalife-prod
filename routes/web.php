@@ -30,14 +30,17 @@ Route::get('/schedule', 'ScheduleController@index');
 Route::get('/booking', 'BookingController@index');
 Route::get('/staff', 'FrontController@staff');
 Route::get('/pdc', 'FrontController@pdc');
-Route::get('/airports', 'FrontController@airports');
+//Route::get('/airports', 'FrontController@airports');
+
+Route::prefix('airport')->group(function(){
+	Route::get('/index', 'Airport\AirportController@index');
+});
 
 Route::prefix('booking')->middleware('auth')->group(function(){
 	Route::get('/create', 'Booking\BookingController@createIndex');
         Route::post('/create', 'Booking\BookingController@create');
 	Route::get('/view', 'Booking\BookingController@view');
 });
-
 
 
 
