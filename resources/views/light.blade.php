@@ -67,8 +67,11 @@
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 				@if(Auth::user()->staff == 1)
 						<h6 class="dropdown-header">
-								Staff
+								Flight
 						</h6>
+						<a class="dropdown-item" href="/airports">
+							Airports
+						</a>
 						<a class="dropdown-item" href="/schedule">
 								Schedule
 					    </a>

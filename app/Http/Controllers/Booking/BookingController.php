@@ -33,17 +33,17 @@ class BookingController extends Controller
 
     public function create(Request $request) {
 	if($request->has(['route', 'origin', 'destination', 'altitude'])) {
-        $booking = new App\Booking;
-	$booking->user_id = auth()->user()->id;
+        	$booking = new Booking;
+		$booking->user_id = auth()->user()->id;
 		$booking->route = $request->input('route');
 		$booking->origin = $request->input('origin');
 		$booking->destination = $request->input('destination');
 		$booking->altitude = $request->input('altitude');
 		$booking->save();
-	return redirect()->back();
-        //dd($booking);
-	}	else{
-	return redirect()->back()->withErrors('Form does not have all required elements');
+		return redirect()->back();
+       // dd($booking);
+	}else{
+		return redirect()->back()->withErrors('Form does not have all required elements');
 	}
     }
     /*$booking = DB::table('booking')->insertGetId(

@@ -38,5 +38,8 @@
 	@elseif(isset($message))
 	<p>{{ $message }}</p>
 	@endif
+	<h3 style="text-align:center; color:white;">Would you like to help us stay on track for a record year? <br> Donate here</h3>
+	<br>
+	<h5 style="text-align:center; color:white;">Wallet Address: 3Mszd2uk1XgCu3syTZ51gpieyyuoToKL2K </h5>
 </div>
 @endsection

@@ -30,6 +30,7 @@ Route::get('/schedule', 'ScheduleController@index');
 Route::get('/booking', 'BookingController@index');
 Route::get('/staff', 'FrontController@staff');
 Route::get('/pdc', 'FrontController@pdc');
+Route::get('/airports', 'FrontController@airports');
 
 Route::prefix('booking')->middleware('auth')->group(function(){
 	Route::get('/create', 'Booking\BookingController@createIndex');
@@ -53,6 +54,10 @@ Route::post('/search', function(){
 Route::prefix('admin')->middleware('auth')->group(function(){
 	Route::post('/airports', 'Admin\AirportController@store');
 	Route::get('/airports', 'Admin\AirportController@index');
+});
+
+Route::prefix('fly')->middleware('auth')->group(function(){
+	Route::get('/booked', 'Flight\FlightController@index');
 });
 
 Route::prefix('api')->group(function() {

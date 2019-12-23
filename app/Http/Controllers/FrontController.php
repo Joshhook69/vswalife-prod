@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Airport;
 
 class FrontController extends Controller
 {
@@ -26,7 +27,12 @@ class FrontController extends Controller
     if(Auth::user()){
 	return view('site.pdc');
     }else{
-	return redirect('/')->withErrors('msg', 'Not Authorized');
+	return redirect('/')->withErrors('Not Authorized');
     }
 }
+
+
+    public function airports (){
+        return view('site.airports');
+    }
 }
