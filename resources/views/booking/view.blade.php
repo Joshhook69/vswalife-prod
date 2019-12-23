@@ -13,11 +13,11 @@
     </tr>
   </thead>
   <tbody>
-    @foreach($flight as $fl)
+    @foreach($booking as $b)
     <tr>
       <td>No callsign yet</td>
-      <td>{{$fl->origin}}</td>
-      <td>{{$fl->destination}}</td>
+      <td>{{$b->origin}}</td>
+      <td>{{$b->destination}}</td>
     </tr>
     @endforeach
   </tbody>

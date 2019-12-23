@@ -5,8 +5,10 @@ namespace App\Http\Controllers\Booking;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Http\Response;
 use App\Http\Controllers\Controller;
 use App\Booking;
+use App\User;
 
 
 class BookingController extends Controller
@@ -48,4 +50,15 @@ class BookingController extends Controller
     }
     /*$booking = DB::table('booking')->insertGetId(
         ['$booking->route', ])*/
+
+    public function view(){
+        if(Auth::check()){
+            if(Auth()->user()->can_fly >= 1){
+                $booking = Booking::all();
+            return view('booking.view')->with('booking', $booking);
+        }else{
+                return redirect('/')->withErrors('Not Authorized');
+             }
+        }
+    }
 }

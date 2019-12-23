@@ -35,6 +35,7 @@ Route::get('/airports', 'FrontController@airports');
 Route::prefix('booking')->middleware('auth')->group(function(){
 	Route::get('/create', 'Booking\BookingController@createIndex');
         Route::post('/create', 'Booking\BookingController@create');
+	Route::get('/view', 'Booking\BookingController@view');
 });
 
 
@@ -56,9 +57,11 @@ Route::prefix('admin')->middleware('auth')->group(function(){
 	Route::get('/airports', 'Admin\AirportController@index');
 });
 
+/*
 Route::prefix('fly')->middleware('auth')->group(function(){
 	Route::get('/booked', 'Flight\FlightController@index');
 });
+*/
 
 Route::prefix('api')->group(function() {
     Route::prefix('schedule')->group(function() {
