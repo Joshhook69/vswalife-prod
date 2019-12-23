@@ -69,7 +69,7 @@
 						<h6 class="dropdown-header">
 								Flight
 						</h6>
-						<a class="dropdown-item" href="/airports">
+						<a class="dropdown-item" href="/airport/index">
 							Airports
 						</a>
 						<a class="dropdown-item" href="/schedule">
@@ -81,7 +81,7 @@
 						<h6 class="dropdown-header">
 							Dispatch
 						</h6>
-						<a class="dropdown-item" href="/booking">
+						<a class="dropdown-item" href="/booking/search">
 							Booking
 						</a>
 						<div class="dropdown-divider"></div>

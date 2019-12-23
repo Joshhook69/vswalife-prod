@@ -32,6 +32,13 @@ class BookingController extends Controller
         // return redirect here
     }
    */
+    public function search(){
+    	if(Auth::user()){
+    		return view('booking.index');
+    	}else{
+    		return redirect('/')->withErrors('Not Authorized');
+    	}
+    }
 
     public function create(Request $request) {
 	if($request->has(['ident','route', 'origin', 'destination', 'altitude'])) {
