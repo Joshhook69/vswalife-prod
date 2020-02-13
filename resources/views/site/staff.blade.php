@@ -14,7 +14,7 @@
   </div>
 </div>
 
-<div class="card" style="width: 18rem; margin-left:15%;">
+<div class="card" style="width: 18rem; margin-left:5%;">
   <img src="/assets/images/family-photos/john-c90-janitor.png" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">John Manley</h5>
@@ -24,6 +24,18 @@
     <a href="#" class="card-link">john.manley@vswalife.com</a>
   </div>
 </div>
+
+<div class="card" style="width: 18rem; margin-left:5%;">
+  <img src="" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Jordan Jolenaar</h5>
+    <p class="card-text" style="padding:0px;">Senior Web Developer && ACARS Developer</p>
+    <p class="card-text">
+    <i class="fas fa-plane"></i>Coming soon</p>
+    <a href="#" class="card-link">jordan.jolenaar@vswalife.com</a>
+  </div>
+</div>
+
 </div>
 </div>
 @endsection

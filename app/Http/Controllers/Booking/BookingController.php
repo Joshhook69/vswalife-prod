@@ -8,8 +8,8 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Response;
 use App\Http\Controllers\Controller;
 use App\Booking;
+use App\Schedule;
 use App\User;
-
 
 class BookingController extends Controller
 {
@@ -49,7 +49,7 @@ class BookingController extends Controller
 		$booking->origin = $request->input('origin');
 		$booking->destination = $request->input('destination');
 		$booking->altitude = $request->input('altitude');
-       // $booking->air_time = $request->input('air_time');
+	//      $booking->air_time = $request->input('air_time');
 		$booking->save();
 		return redirect()->back();
        // dd($booking);

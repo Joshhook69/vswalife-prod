@@ -25,7 +25,7 @@
 					<td>{{$u->roles}}</td>
 			@auth
 			@if(Auth::user()->staff == 1)
-					<td><a href="/roster/{{$u->id}}/edit" style="display:inline-block;" class="btn btn-success btn-xs simple-tooltip" title="Edit"><i class="far fa-edit"></i></a>
+					<td><a href="/roster/edit/{{$u->id}}" style="display:inline-block;" class="btn btn-success btn-xs simple-tooltip" title="Edit"><i class="far fa-edit"></i></a>
 				    <button type="submit" style="display:inline-block;" class="btn btn-danger btn-xs simple-tooltip" title="Delete"><i class="fa fa-times"></i></button>	
 			@endif
 			@endauth

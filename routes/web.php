@@ -54,7 +54,7 @@ Route::get('/test', 'CommandmentsController@test');
 
 Route::prefix('roster')->group(function(){
 	Route::get('/index', 'RosterController@index');
-	Route::get('/{$id}/edit', 'RosterController@edit');
+	Route::get('/edit/{$id}', 'RosterController@edit');
 });
 //roster and edit(edit doesn't work)
 

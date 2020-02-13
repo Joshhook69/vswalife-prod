@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
-use App\Auth;
 use DB;
+
 class RosterController extends Controller
 {
     public function index() {
