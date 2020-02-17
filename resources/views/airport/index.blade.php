@@ -14,7 +14,7 @@
 			<tr>
 				<td>{{$a->icao}}</td>
 				<td>{{$a->name}}</td>
-				<td style="padding-right:10%;"><a href="https://flightaware.com/resources/airport/{{$a->iata}}/procedures">Charts</td>
+				<td style="padding-right:10%;"><a href="https://api.aviationapi.com/v1/charts?apt={{$a->iata}}">Charts</td>
 				<td>{{$a->country}}</td>
 			</tr>
 			@endforeach
