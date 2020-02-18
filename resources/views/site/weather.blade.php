@@ -1,25 +1,12 @@
 @extends('light')
 
 @section('title')
-    Weather
+	Weather
 @endsection
 
 @section('content')
+<!-- *** Not my code or property of anyone with vSWALife! This is Ian Cowan's work! https://www.aviationapi.com/ -->
     <div class="container">
-        <br>
-        <h1>Search for Airport Weather (METAR/TAF)</h1>
-        <br>
-        <form action="/weather/search" method="post">
-            @csrf
-            <div class="row">
-                <div class="col-sm-4">
-                    <input type="text" name="apt" placeholder="Airport ID (KATL/ATL)" class="form-control">
-                </div>
-                <div class="col-sm-1">
-                    <button class="btn btn-success" type="submit">Search</button>
-                </div>
-            </div>
-        </form>
         @if($apt != null)
             @if(count($metar) > 0)
                 <hr>
@@ -73,8 +60,8 @@
                 </h5>
                 <br>
                 <p><b>Issue Time:</b> {{ \Carbon\Carbon::parse($taf[$apt]->issue_time)->format('m/d/Y h:m') }}z
-                <p><b>Valid Time:</b> {{ \Carbon\Carbon::parse(substr($taf[$apt]->valid_time, 0, 20))->format('m/d/Y h:m') }}z - {{ \Carbon\Carbon::parse(substr($taf[$apt]->valid_time, -20))->format('m/d/Y $
-            @else
+		<p><b>Valid Time:</b> {{ \Carbon\Carbon::parse(substr($taf[$apt]->valid_time, 0, 20))->format('m/d/Y h:m') }}z - {{ \Carbon\Carbon::parse(substr($taf[$apt]->valid_time, -20))->format('m/d/Y h:m') }}z</p>
+                @else
                 <hr>
                 <h3>No TAF found for {{ $apt }}</h3>
             @endif

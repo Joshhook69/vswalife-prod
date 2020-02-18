@@ -10,5 +10,5 @@ class Airport extends Model
     protected $table = 'airports';
 
     protected $fillable = [
-    	'icao', 'iata', 'name', 'location', 'country'];
+    	'icao', 'name_short', 'name_long', 'location', 'country'];
 }

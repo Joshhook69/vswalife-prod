@@ -10,7 +10,7 @@ use App\Airport;
 class AirportController extends Controller
 {
     public function index(){
-    	$airport = Airport::all();
-    	return view('airport.index')->with('airport', $airport);
+    	$apt = Airport::all();
+    	return view('airport.index')->with('airport', $apt);
     }
 }
