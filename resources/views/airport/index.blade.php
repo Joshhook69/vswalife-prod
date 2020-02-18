@@ -17,7 +17,7 @@
 				<td>{{$a->icao}}</td>
 				<td>{{$a->name_short}}</td>
 				<td style=""><a href="https://vswalife.com/weather?apt={{$a->icao}}">Weather</td>
-				<td style=""><a href="https://api.aviationapi.com/v1/charts?apt={{$a->icao}}">Charts</td>
+				<td style=""><a href="https://vswalife.com/charts?apt={{$a->icao}}">Charts</td>
 				<td>{{$a->country}}</td>
 			</tr>
 			@endforeach
