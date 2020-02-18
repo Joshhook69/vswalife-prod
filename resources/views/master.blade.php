@@ -99,6 +99,9 @@
 						<a class="dropdown-item" href="/schedule">
 								Schedule
 					    </a>
+						<a class="dropdown-item" href="airport/index">
+								Airports
+						</a>
 					    <div class="dropdown-divider"></div>
 				@endif
 				@if(Auth::user()->dispatcher == 1)
