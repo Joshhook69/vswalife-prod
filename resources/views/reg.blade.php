@@ -37,7 +37,7 @@
 			<img src="/assets/images/nav_logo.png" alt="Logo" style="width:100px; height:100px;">
 		</a>
 
-		<ul class="navbar-nav ml-auto" style="margin-right:20%;">
+		<ul class="navbar-nav ml-auto" style="margin-right:28%;">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
 					<span class="navbar-toggler-icon"></span>
 			</button>

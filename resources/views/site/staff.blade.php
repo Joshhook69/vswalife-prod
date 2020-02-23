@@ -29,7 +29,8 @@
   <img src="" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Jordan Jolenaar</h5>
-    <p class="card-text" style="padding:0px;">Senior Web Developer && ACARS Developer</p>
+    <p class="card-text" style="padding:0px;">Project Manager</p>
+    <p class="card-text" style="padding:0px;">Senior Web && ACARS Developer</p>
     <p class="card-text">
     <i class="fas fa-plane"></i>Coming soon</p>
     <a href="#" class="card-link">jordan.jolenaar@vswalife.com</a>
