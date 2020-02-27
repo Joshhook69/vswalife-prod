@@ -58,7 +58,7 @@
 				<a class="nav-link" href="/contact">Contact</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="/roster">Roster</a>
+				<a class="nav-link" href="/roster/index">Roster</a>
 			</li>
 
 			<!-- Logout -->
