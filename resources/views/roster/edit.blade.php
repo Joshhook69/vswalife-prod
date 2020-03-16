@@ -1,5 +1,5 @@
 @extends('light')
-@section('title','Edit Employee')
+@section('title','Edit User')
 @section('content')
   <div class="row">
     <div class="col-sm-8 offset-sm-2">
