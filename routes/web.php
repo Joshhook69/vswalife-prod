@@ -37,12 +37,15 @@ Route::prefix('airport')->group(function(){
 //list of all airports swa flies to
 
 //Charts
-Route::get('/charts', 'ChartController@index');
-Route::post('/charts/search', 'ChartController@searchChart');
-Route::get('/charts/afd', 'ChartController@AFDindex');
-Route::post('/charts/afd/search', 'ChartController@searchAFD');
-Route::get('/charts/changes', 'ChartController@ChartChangeindex');
-Route::post('/charts/changes/search', 'ChartController@searchChartChange');
+// vswalife.com/charts ->
+Route::prefix('charts')->group(function() {
+	Route::get('/', 'ChartController@index');
+	Route::post('/search', 'ChartController@searchChart');
+	Route::get('/afd', 'ChartController@AFDindex');
+	Route::post('/afd/search', 'ChartController@searchAFD');
+	Route::get('/changes', 'ChartController@ChartChangeindex');
+	Route::post('/changes/search', 'ChartController@searchChartChange');
+});
 
 //the complicated weather thingy
 Route::get('/weather', 'WeatherController@index');

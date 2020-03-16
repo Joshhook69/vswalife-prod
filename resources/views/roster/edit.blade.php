@@ -3,7 +3,7 @@
 @section('content')
   <div class="row">
     <div class="col-sm-8 offset-sm-2">
-      <form action="{{route('roster.update')}}" method = "post">
+      <form action="{{route('roster.update', ['id' => $user->id])}}" method = "post">
         @csrf
         <div class="form-group">
           <label for="name">Name:</label>

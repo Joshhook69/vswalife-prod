@@ -13,14 +13,20 @@ class RosterController extends Controller
         return view('roster.index')->with('users', $users);
     }
 
-    public function edit($id){
-	$user = User::find($id);
-	return view('roster.edit',['user'=> $user]);
+    public function edit(Request $request, $id){
+    	$user = User::find($id);
+        if($user != null)
+    	   return view('roster.edit')->with('user', $user);
+        else
+            return redirect('/')->with('error', 'No user found.');
     }
 
     public function update(Request $request, $id){
     	//Retrieve the user and update
         $user = User::find($id);
+        if(!$request->has(['name', 'email', 'crew_base', 'roles'])){
+            dd('hooker is a big dummy.');
+        }
         if($user != null) {
             $user->name = $request->input('name');
             $user->email = $request->input('email');
@@ -32,14 +38,14 @@ class RosterController extends Controller
             return redirect()->route('roster.index')->withErrors(['User not found.']);
 	}
 
-	/*public function store(Request $request){
+	public function store(Request $request){
 		$user = new User();
 		$user->name = $request->input('name');
     	$user->email = $request->input('email');
     	$user->crew_base = $request->input('crew_base');
     	$user->roles = $request->input('roles');
     	$user->save();
-	}*/
+	}
 
     public function destroy($id) {
     	$user = User::find($id);
