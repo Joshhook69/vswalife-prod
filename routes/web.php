@@ -25,7 +25,12 @@ Route::prefix('admin')->middleware('auth')->group(function(){
 });
 Not Implemented im pretty sure^^^
 */
-
+/*
+//working right just dangerous for the time being on prod
+Route::prefix('email')->group(function(){
+	Route::get('/index', 'MailController@index');
+});
+*/
 Route::prefix('airport')->group(function(){
 	Route::get('/index', 'Airport\AirportController@index');
 });
@@ -54,7 +59,7 @@ Route::prefix('api')->group(function() {
 
 Route::prefix('booking')->middleware('auth')->group(function(){
 	Route::get('/create', 'Booking\BookingController@createIndex');
-    Route::post('/create', 'Booking\BookingController@create');
+    	Route::post('/create', 'Booking\BookingController@create');
 	Route::get('/view', 'Booking\BookingController@view');
 	Route::get('/search', 'Booking\BookingController@search');
 });
@@ -66,7 +71,7 @@ Route::get('/test', 'CommandmentsController@test');
 
 Route::prefix('roster')->group(function(){
 	Route::get('/index', 'RosterController@index');
-	Route::get('/edit/{$id}', 'RosterController@edit');
+	Route::get('/{id}/edit', 'RosterController@edit')->name('roster.edit');
 });
 //roster and edit(edit doesn't work)
 
