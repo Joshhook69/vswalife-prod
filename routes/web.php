@@ -73,7 +73,9 @@ Route::prefix('roster')->group(function(){
 	Route::get('/index', 'RosterController@index')->name('roster.index');
 	Route::get('/{id}/edit', 'RosterController@edit')->name('roster.edit');
 	Route::get('/{id}/delete', 'RosterController@destroy')->name('roster.destroy');
-	Route::post('/update', 'RosterController@update')->name('roster.update');
+
+	//Route::get('/{id}/update', 'RosterController@update')->name('roster.update');
+	Route::post('/{id}/update', 'RosterController@update')->name('roster.update');
 });
 //roster and edit(edit doesn't work)
 

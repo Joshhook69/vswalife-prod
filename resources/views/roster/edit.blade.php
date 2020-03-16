@@ -6,12 +6,20 @@
       <form action="{{route('roster.update')}}" method = "post">
         @csrf
         <div class="form-group">
-          <label for="firstname">Name:</label>
+          <label for="name">Name:</label>
           <input type="text" name = "name" id = "name" class="form-control" required value = "{{$user->name}}">
         </div>
         <div class="form-group">
           <label for="email">Email:</label>
           <input type="text" name = "email" id = "email" class="form-control" required value = "{{$user->email}}">
+        </div>
+        <div class="form-group">
+        	<label for="crew_base">Crew Base:</label>
+        	<input type="text" name="crew_base" id="crew_base" class="form-control" required value="{{$user->crew_base}}">
+        </div>
+        <div class="form-group">
+        	<label for="roles">Rank:</label>
+        	<input type="text" name="roles" id="roles" class="form-control" required value="{{$user->roles}}">
         </div>
         <input type="hidden" name="id" value = "{{$user->id}}">
         <button type = "submit" class = "btn btn-success">Submit</button>
