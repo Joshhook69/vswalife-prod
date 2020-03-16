@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\User;
-use DB;
 
 class RosterController extends Controller
 {
@@ -17,7 +16,7 @@ class RosterController extends Controller
     public function edit($id)
     {
 	$user = User::find($id);
-	return view('roster.edit');
+	return view('roster.edit',['user'=> $user]);
     }
     public function update(Request $request, $id){
 	}

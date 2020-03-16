@@ -70,8 +70,10 @@ Route::get('/test', 'CommandmentsController@test');
 //atc commandments and the upcoming users admission test
 
 Route::prefix('roster')->group(function(){
-	Route::get('/index', 'RosterController@index');
+	Route::get('/index', 'RosterController@index')->name('roster.index');
 	Route::get('/{id}/edit', 'RosterController@edit')->name('roster.edit');
+	Route::get('/{id}/delete', 'RosterController@destroy')->name('roster.destroy');
+	Route::post('/update', 'RosterController@update')->name('roster.update');
 });
 //roster and edit(edit doesn't work)
 
