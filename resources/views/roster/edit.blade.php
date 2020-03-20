@@ -13,6 +13,9 @@
           <label for="email">Email:</label>
           <input type="text" name = "email" id = "email" class="form-control" required value = "{{$user->email}}">
         </div>
+	<div class="form-group">
+	  <label for="cid">VATSIM CID:</label>
+	  <input type="text" name="vatsim_cid" id="vatsim_cid" class="form-control" require value="{{$user->vatsim_cid}}">
         <div class="form-group">
         	<label for="crew_base">Crew Base:</label>
         	<input type="text" name="crew_base" id="crew_base" class="form-control" required value="{{$user->crew_base}}">
