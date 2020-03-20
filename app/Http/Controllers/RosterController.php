@@ -30,7 +30,7 @@ class RosterController extends Controller
         if($user != null) {
             $user->name = $request->input('name');
             $user->email = $request->input('email');
-	    $user->vatsim_cid = $request->input('vatsim_cid');
+	        $user->vatsim_cid = $request->input('vatsim_cid');
             $user->crew_base = $request->input('crew_base');
             $user->roles = $request->input('roles');
             $user->save(); //persist the data
@@ -41,9 +41,9 @@ class RosterController extends Controller
 
 	public function store(Request $request){
 		$user = new User();
-	$user->name = $request->input('name');
+	    $user->name = $request->input('name');
     	$user->email = $request->input('email');
-	$user->vatsim_cid = $request->input('vatsim_cid');
+	    $user->vatsim_cid = $request->input('vatsim_cid');
     	$user->crew_base = $request->input('crew_base');
     	$user->roles = $request->input('roles');
     	$user->save();
