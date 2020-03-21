@@ -1,27 +1,30 @@
 @extends('light')
 @section('content')
-<div class="container" style="margin-top:0%;">
-<link rel="stylesheet" type="text/css" href="/assets/css/search.css">
-<script src="/assets/js/search.js"></script>
-<div class="jumbotron jumbotron-fluid" style="background-color:#F9F9F9;">
-  <div class="container">
-    <h1 class="display-4" style="text-align:center; margin-top:5%; background-color:#F9F9F9;">Booking</h1>
+<div class="container">
+	<table class="table table-striped table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Callsign</th>
+      <th scope="col">Origin</th>
+      <th scope="col">Destination</th>
+      <th scope="col">Route</th>
+      <th scope="col">Altitude</th>
+      <th scope="col">Planned Duration</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach($booking as $b)
+    <tr>
+      <td>SWA{{$b->ident}}</td>
+      <td>{{$b->origin}}</td>
+      <td>{{$b->destination}}</td>
+      <td>{{$b->route}}</td>
+      <td>{{$b->altitude}}</td>
+      <td>{{$b->air_time}} Minutes</td>
+    </tr>
+    @endforeach
+  </tbody>
+</table>
 </div>
-</div>
-<form autocomplete="off" action="">
-    <div class="autocomplete" style="width:300px; margin-left:10%;">
-    	<h1 style="text-align:center;">Departure Airport</h1>
-      <input id="airport" type="text" name="" placeholder="Airport">
-    </div>
-    <div class="autocomplete" style="width:300px; margin-left:25%;">
-    	<h1 style="text-align:center;">Arrival Airport</h1>
-      <input id="jsesbest" type="text" name="" placeholder="Airport">
-    </div>
-    <input type="submit">
-    <script>
-      autocomplete(document.getElementById("airport"), destinations);
-      autocomplete(document.getElementById("jsesbest"), destinations);
-    </script>
-  </form>
 
 @endsection

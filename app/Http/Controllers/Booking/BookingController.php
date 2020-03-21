@@ -21,6 +21,17 @@ class BookingController extends Controller
     	}
     }
 
+    public function index(){
+    	if(Auth::check()){
+    		if(Auth()->user()->can_fly >= 1){
+    			$booking = Booking::where('user_id', Auth()->user()->id)->get();
+    			return view('booking.index')->with('booking', $booking);
+    		}else{
+    			return redirect('/')->withErrors('Not Authorized');
+    		}
+    	}
+    }
+
     /*
 	public function creates(Request $request) {
 	if($request->has('')) {
@@ -34,7 +45,7 @@ class BookingController extends Controller
    */
     public function search(){
     	if(Auth::user()){
-    		return view('booking.index');
+    		return view('booking.search');
     	}else{
     		return redirect('/')->withErrors('Not Authorized');
     	}
