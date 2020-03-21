@@ -10,7 +10,7 @@
 		<thead>
 			<tr>
 				<th>Name</th>
-				<th>SWA ID</th>
+				<th>WN ID</th>
 				<th>Crew Base</th>
 				<th>Rank</th>
 				<th></th>

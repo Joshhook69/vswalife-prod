@@ -61,7 +61,7 @@ Route::prefix('api')->group(function() {
 //api routes for interfacing with acars client(im pretty sure)
 
 Route::prefix('booking')->middleware('auth')->group(function(){
-	Route::get('/index', 'Booking\BookingController@index');
+	Route::get('/index', 'Booking\BookingController@index')->name('booking.index');
 	Route::get('/create', 'Booking\BookingController@createIndex');
     	Route::post('/create', 'Booking\BookingController@create');
 	Route::get('/view', 'Booking\BookingController@view');

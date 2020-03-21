@@ -27,7 +27,7 @@ class BookingController extends Controller
     			$booking = Booking::where('user_id', Auth()->user()->id)->get();
     			return view('booking.index')->with('booking', $booking);
     		}else{
-    			return redirect('/')->withErrors('Not Authorized');
+    			return redirect('/')->withErrors('No Booking Found');
     		}
     	}
     }
@@ -62,7 +62,7 @@ class BookingController extends Controller
 		$booking->altitude = $request->input('altitude');
 	//      $booking->air_time = $request->input('air_time');
 		$booking->save();
-		return redirect()->back();
+		return redirect()->route('booking.index');
        // dd($booking);
 	}else{
 		return redirect()->back()->withErrors('Form does not have all required elements');
