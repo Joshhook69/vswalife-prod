@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Auth;
 use App\User;
 
 class RosterController extends Controller
@@ -14,12 +15,21 @@ class RosterController extends Controller
     }
 
     public function edit(Request $request, $id){
-    	$user = User::find($id);
-        if($user != null)
-    	   return view('roster.edit')->with('user', $user);
-        else
-            return redirect('/')->with('error', 'No user found.');
-    }
+	if(Auth::check()){
+		if(Auth()->user()->staff >= 1){
+			$user = User::find($id);
+			if($user != null)
+		return view('roster.edit')->with('user', $user);
+		}else{
+			return redirect('/')->with('error', 'No user found.');
+		}
+	}
+	}
+
+	public function email(){
+		$users = User::all();
+		return view('roster.email')->with('users', $users);
+	}
 
     public function update(Request $request, $id){
     	//Retrieve the user and update

@@ -27,7 +27,7 @@ class BookingController extends Controller
     			$booking = Booking::where('user_id', Auth()->user()->id)->get();
     			return view('booking.index')->with('booking', $booking);
     		}else{
-    			return redirect('/')->withErrors('No Booking Found');
+    			return redirect('/')->with(['error', 'No Booking Found']);
     		}
     	}
     }

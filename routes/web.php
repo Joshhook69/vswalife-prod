@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Input;
 use App\User;
+use App\Events\FormSubmitted;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,7 +18,18 @@ Route::get('/', 'FrontController@index');
 Route::get('/fleet', 'FleetController@index');
 Auth::routes();
 // Defualt auth routes and home page as well as fleet
+Route::get('/pusher', function() {
+	return view('pusher');
+});
 
+Route::get('/sender', function() {
+	return view('sender');
+});
+Route::post('/sender', function() {
+	//This is the Post req
+	event(new FormSubmitted($text));
+	$text = request()->text;
+});
 /*
 Route::prefix('admin')->middleware('auth')->group(function(){
 	Route::post('/airports', 'Admin\AirportController@store');
@@ -73,11 +85,12 @@ Route::get('/commandments', 'CommandmentsController@index');
 Route::get('/test', 'CommandmentsController@test');
 //atc commandments and the upcoming users admission test
 
-Route::prefix('roster')->group(function(){
+Route::prefix('roster')->middleware('auth')->group(function(){
 	Route::get('/index', 'RosterController@index')->name('roster.index');
 	Route::get('/{id}/edit', 'RosterController@edit')->name('roster.edit');
 	Route::get('/{id}/delete', 'RosterController@destroy')->name('roster.destroy');
-
+//	Route::get('/email', 'RosterController@email')->name('roster.email');
+//only to get the email list for mass mail
 	//Route::get('/{id}/update', 'RosterController@update')->name('roster.update');
 	Route::post('/{id}/update', 'RosterController@update')->name('roster.update');
 });
