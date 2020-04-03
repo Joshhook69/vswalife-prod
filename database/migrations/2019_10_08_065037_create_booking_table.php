@@ -13,12 +13,13 @@ class CreateBookingTable extends Migration
     {
         Schema::create('booking', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('user_id');
-            $table->string('origin')->nullable(false);
-            $table->string('destination')->nullable(false);
+            $table->integer('ident')->nullable(true)->default(null);
+            $table->string('user_id', '255');
+            $table->string('origin', '255')->nullable(false);
+            $table->string('destination', '255')->nullable(false);
             $table->longText('route')->nullable(false);
-            $table->string('altitude')->nullable(false);
-            $table->string('air_time')->nullable(true);
+            $table->string('altitude', '255')->nullable(false);
+            $table->string('air_time', '255')->nullable(true);
             $table->timestamps();
         });
     }
