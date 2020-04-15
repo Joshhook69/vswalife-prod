@@ -32,7 +32,7 @@ Route::prefix('email')->group(function(){
 });
 */
 Route::prefix('airport')->group(function(){
-	Route::get('/index', 'Airport\AirportController@index');
+	Route::get('/', 'Airport\AirportController@index');
 });
 //list of all airports swa flies to
 
@@ -61,7 +61,7 @@ Route::prefix('api')->group(function() {
 //api routes for interfacing with acars client(im pretty sure)
 
 Route::prefix('booking')->middleware('auth')->group(function(){
-	Route::get('/index', 'Booking\BookingController@index')->name('booking.index');
+	Route::get('/', 'Booking\BookingController@index')->name('booking.index');
 	Route::get('/create', 'Booking\BookingController@createIndex');
     	Route::post('/create', 'Booking\BookingController@create');
 	Route::get('/view', 'Booking\BookingController@view');
@@ -73,8 +73,8 @@ Route::get('/commandments', 'CommandmentsController@index');
 Route::get('/test', 'CommandmentsController@test');
 //atc commandments and the upcoming users admission test
 
-Route::prefix('roster')->group(function(){
-	Route::get('/index', 'RosterController@index')->name('roster.index');
+Route::prefix('roster')->middleware('auth')->group(function(){
+	Route::get('/', 'RosterController@index')->name('roster.index');
 	Route::get('/{id}/edit', 'RosterController@edit')->name('roster.edit');
 	Route::get('/{id}/delete', 'RosterController@destroy')->name('roster.destroy');
 
