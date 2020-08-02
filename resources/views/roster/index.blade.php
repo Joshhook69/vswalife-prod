@@ -24,7 +24,7 @@
 					<td>{{$u->crew_base}}</td>
 					<td>{{$u->roles}}</td>
 			@auth
-			@if(Auth::user()->staff == 1)
+			@if(Auth::user()->staff == 2)
 					<td>{{$u->vatsim_cid}}</td>
 					<td><a href="/roster/{{$u->id}}/edit" style="display:inline-block;" class="btn btn-success btn-xs simple-tooltip" title="Edit"><i class="far fa-edit"></i></a>
 				    <button type="submit" href="/roster/{id}/delete" style="display:inline-block;" class="btn btn-danger btn-xs simple-tooltip" title="Delete"><i class="fa fa-times"></i></button>	

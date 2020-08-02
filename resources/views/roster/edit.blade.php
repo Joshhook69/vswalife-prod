@@ -7,11 +7,25 @@
         @csrf
         <div class="form-group">
           <label for="name">Name:</label>
-          <input type="text" name = "name" id = "name" class="form-control" required value = "{{$user->name}}">
+          <input type="text" name="name" id="name" class="form-control" required value = "{{$user->name}}">
         </div>
+	<div class="form-group">
+	  <label for="last_login_at">Last Login:</label>
+	<input type="text" name="last_login_at" id="last_login_at" class="form-control" required value = "{{$user->last_login_at}}" readonly>
+	</div>
+
+	@auth
+	@if(Auth::user()->staff == 2)
+	<div class="form-group">
+	<label for="last_login_ip">Last Login IP:</label>
+	<input type="text" name="last_login_ip" id="last_login_ip" class="form-control" required value = "{{$user->last_login_ip}}" readonly>
+	</div>
+	@endif
+	@endauth
+
         <div class="form-group">
           <label for="email">Email:</label>
-          <input type="text" name = "email" id = "email" class="form-control" required value = "{{$user->email}}">
+          <input type="text" name="email" id="email" class="form-control" required value = "{{$user->email}}">
         </div>
 	<div class="form-group">
 	  <label for="swa_id">WN ID:</label>

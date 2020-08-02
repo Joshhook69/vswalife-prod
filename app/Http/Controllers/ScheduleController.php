@@ -10,7 +10,7 @@ class ScheduleController extends Controller {
 
     public function index() {
 		if(Auth::check()){
-			if(auth()->user()->staff == 1){
+			if(auth()->user()->staff >= 1){
 				$schedule = Schedule::paginate(30);
 				return view('schedule.index')->with('schedule', $schedule);
 			}else{

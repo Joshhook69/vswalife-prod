@@ -71,7 +71,7 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            @if(Auth::user()->staff == 1)
+                            @if(Auth::user()->staff >= 1)
                                 <a class="dropdown-item" href="/test">
                                     Test
                                 </a>

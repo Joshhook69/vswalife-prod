@@ -5,7 +5,7 @@
 	<h3 style="text-align:center; padding-top:5%; color:white"><a href="https://flightaware.com/live/fleet/SWA" 
 		target="_blank" style="color:white; text-decoration:underline;"> Live Southwest Airlines Operations</a></h3>
 @auth
-@if(Auth::user()->staff == 1)
+@if(Auth::user()->staff >= 1)
 <form action="{{URL::to('/search')}}" method="POST" role="search">
 	{{ csrf_field() }}
 	<div class="input-group">

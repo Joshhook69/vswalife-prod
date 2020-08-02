@@ -34,14 +34,16 @@ class RosterController extends Controller
     public function update(Request $request, $id){
     	//Retrieve the user and update
         $user = User::find($id);
-        if(!$request->has(['name', 'email', 'vatsim_cid', 'swa_id', 'crew_base', 'roles'])){
+        if(!$request->has(['name', 'last_login_at', 'last_login_ip', 'email', 'vatsim_cid', 'swa_id', 'crew_base', 'roles'])){
             dd('hooker is a big dummy.');
         }
         if($user != null) {
             $user->name = $request->input('name');
+	    $user->last_login_at = $request->input('last_login_at');
+	    $user->last_login_ip = $request->input('last_login_ip');
             $user->email = $request->input('email');
-	    	$user->swa_id = $request->input('swa_id');
-	    	$user->vatsim_cid = $request->input('vatsim_cid');
+	    $user->swa_id = $request->input('swa_id');
+	    $user->vatsim_cid = $request->input('vatsim_cid');
             $user->crew_base = $request->input('crew_base');
             $user->roles = $request->input('roles');
             $user->save(); //persist the data
@@ -52,13 +54,15 @@ class RosterController extends Controller
 
 	public function store(Request $request){
 		$user = new User();
-	    $user->name = $request->input('name');
-    	$user->email = $request->input('email');
+		$user->name = $request->input('name');
+		$user->last_login_at = $request->input('last_login_at');
+		$user->last_login_ip = $request->input('last_login_ip');
+    		$user->email = $request->input('email');
 		$user->swa_id = $request->input('swa_id');
 		$user->vatsim_cid = $request->input('vatsim_cid');
-    	$user->crew_base = $request->input('crew_base');
-    	$user->roles = $request->input('roles');
-    	$user->save();
+	    	$user->crew_base = $request->input('crew_base');
+    		$user->roles = $request->input('roles');
+    		$user->save();
 	}
 
     public function destroy($id) {

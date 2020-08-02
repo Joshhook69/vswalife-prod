@@ -71,7 +71,7 @@
 								 {{ Auth::user()->name }} <span class="caret"></span>
 						</a>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-				@if(Auth::user()->staff == 1)
+				@if(Auth::user()->staff >= 1)
 						<h6 class="dropdown-header">
 								Staff
 						</h6>
