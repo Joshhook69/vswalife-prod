@@ -12,10 +12,12 @@
         "barryvdh/laravel-debugbar": "^3.2",
         "fideloper/proxy": "^4.0",
         "guzzlehttp/guzzle": "^6.4",
+        "ipinfo/ipinfolaravel": "^1.0",
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
-	"symfony/mime": "^4.4|^5.0",
-	"symfony/polyfill-mbstring": "~1.1"
+        "nesbot/carbon": "^2.37",
+        "symfony/mime": "^4.4|^5.0",
+        "symfony/polyfill-mbstring": "~1.1"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

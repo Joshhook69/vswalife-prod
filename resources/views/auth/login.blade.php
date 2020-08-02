@@ -81,6 +81,7 @@
                             {{ __('Login') }}
                         </button>
 					</div>
+			{{ csrf_field() }} {{ method_field('POST') }}
 			</form>
 		</div>
 		<div class="alternateLoginDiv">
