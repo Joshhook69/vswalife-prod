@@ -6,7 +6,7 @@
 * [Setup](#setup)
 
 ## General info
-This is a virtual airline created for use with the ![Vatsim](https://vatsim.net).
+This is a virtual airline created for use with the [Vatsim](https://vatsim.net).
 	
 ## Technologies
 Project is created with:
