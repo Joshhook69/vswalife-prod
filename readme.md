@@ -6,7 +6,7 @@
 * [Setup](#setup)
 
 ## General info
-This project is simple Lorem ipsum dolor generator.
+This is a virtual airline created for use with the ![Vatsim](https://vatsim.net).
 	
 ## Technologies
 Project is created with:
