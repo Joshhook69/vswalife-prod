@@ -10,8 +10,8 @@ This is a virtual airline created for use with the [Vatsim](https://vatsim.net) 
 	
 ## Technologies
 Project is created with:
-* Laravel Version: 5.8
-* Ipinfo Version: 1.0
+* [Laravel](https://laravel.com/docs/5.8) Version: 5.8
+* [Ipinfo](https://github.com/ipinfo/laravel) Version: 1.0
 * Aviation API
 * Vue Js
 * React Js
