@@ -10,5 +10,17 @@ This is a virtual airline created for use with the [Vatsim](https://vatsim.net) 
 	
 ## Technologies
 Project is created with:
-* Lorem version: 12.3
-* Ipsum version: 2.33
+* Laravel Version: 5.8
+* Ipinfo Version: 1.0
+* Aviation API
+* Vue Js
+* React Js
+
+##Setup
+```
+$ composer install
+$ npm install
+$ php artisan preset react
+$ composer require ipinfo/laravel
+
+```
