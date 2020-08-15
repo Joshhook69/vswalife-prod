@@ -17,6 +17,7 @@ Project is created with:
 * React Js
 
 ##Setup
+Run these:
 
 ```
 $ composer install
