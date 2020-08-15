@@ -12,7 +12,7 @@ This is a virtual airline created for use with the [Vatsim](https://vatsim.net) 
 Project is created with:
 * [Laravel](https://laravel.com/docs/5.8) Version: 5.8
 * [Ipinfo](https://github.com/ipinfo/laravel) Version: 1.0
-* Aviation API
+* [Aviation](https://www.aviationapi.com/) API
 * Vue Js
 * React Js
 
