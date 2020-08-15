@@ -11,7 +11,7 @@
         "php": "^7.2.2",
         "barryvdh/laravel-debugbar": "^3.2",
         "fideloper/proxy": "^4.0",
-        "guzzlehttp/guzzle": "^6.4",
+        "guzzlehttp/guzzle": "6.5.x-dev",
         "ipinfo/ipinfolaravel": "^1.0",
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",

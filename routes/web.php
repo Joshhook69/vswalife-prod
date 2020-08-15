@@ -17,6 +17,9 @@ use App\Events\FormSubmitted;
 Route::get('/', 'FrontController@index');
 Route::get('/fleet', 'FleetController@index');
 Auth::routes();
+//map test
+Route::get('/map', 'FrontController@map');
+
 // Defualt auth routes and home page as well as fleet
 Route::get('/pusher', function() {
 	return view('pusher');

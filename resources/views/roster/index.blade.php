@@ -13,7 +13,11 @@
 				<th>WN ID</th>
 				<th>Crew Base</th>
 				<th>Rank</th>
-				<th></th>
+			@auth
+			@if(Auth::user()->staff == 2)
+				<th>CID</th>
+			@endif
+			@endauth
 			</tr>
 		</thead>
 		<tbody>
