@@ -1,7 +1,7 @@
 @extends('light')
 @section('content')
 <div class="container">
-	<table class="table table-borderless">
+	<table class="table table-borderless" style="margin-left:10%;">
 		<thead>
 			<tr>
 				<th scope="col">ICAO</th>
