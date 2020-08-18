@@ -38,5 +38,8 @@ class FrontController extends Controller
 	return redirect('/')->withErrors('Not Authorized');
     }
 }
+    public function policy(){
+        return view('site.policy');
+    }
 
 }

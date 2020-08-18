@@ -77,6 +77,9 @@
 				<a class="nav-link" href="/contact">Contact</a>
 			</li>
 			<li class="nav-item">
+				<a class="nav-link" href="/policy">Policy</a>
+			</li>
+			<li class="nav-item">
 				<a class="nav-link" href="/roster/index">Roster</a>
 			</li>
 			<li class="nav-item">

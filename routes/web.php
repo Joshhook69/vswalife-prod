@@ -16,6 +16,7 @@ use App\Events\FormSubmitted;
 
 Route::get('/', 'FrontController@index');
 Route::get('/fleet', 'FleetController@index');
+Route::get('/policy', 'FrontController@policy');
 Auth::routes();
 //map test
 Route::get('/map', 'FrontController@map');
@@ -78,7 +79,7 @@ Route::prefix('api')->group(function() {
 Route::prefix('booking')->middleware('auth')->group(function(){
 	Route::get('/index', 'Booking\BookingController@index')->name('booking.index');
 	Route::get('/create', 'Booking\BookingController@createIndex');
-    	Route::post('/create', 'Booking\BookingController@create');
+    Route::post('/create', 'Booking\BookingController@create');
 	Route::get('/view', 'Booking\BookingController@view');
 	Route::get('/search', 'Booking\BookingController@search');
 });
