@@ -39,11 +39,11 @@ class RosterController extends Controller
         }
         if($user != null) {
             $user->name = $request->input('name');
-	    $user->last_login_at = $request->input('last_login_at');
-	    $user->last_login_ip = $request->input('last_login_ip');
+	    	$user->last_login_at = $request->input('last_login_at');
+	    	$user->last_login_ip = $request->input('last_login_ip');
             $user->email = $request->input('email');
-	    $user->swa_id = $request->input('swa_id');
-	    $user->vatsim_cid = $request->input('vatsim_cid');
+	   	    $user->swa_id = $request->input('swa_id');
+	    	$user->vatsim_cid = $request->input('vatsim_cid');
             $user->crew_base = $request->input('crew_base');
             $user->roles = $request->input('roles');
             $user->save(); //persist the data
@@ -53,13 +53,13 @@ class RosterController extends Controller
 	}
 
 	public function store(Request $request){
-		$user = new User();
-		$user->name = $request->input('name');
-		$user->last_login_at = $request->input('last_login_at');
-		$user->last_login_ip = $request->input('last_login_ip');
+			$user = new User();
+			$user->name = $request->input('name');
+			$user->last_login_at = $request->input('last_login_at');
+			$user->last_login_ip = $request->input('last_login_ip');
     		$user->email = $request->input('email');
-		$user->swa_id = $request->input('swa_id');
-		$user->vatsim_cid = $request->input('vatsim_cid');
+			$user->swa_id = $request->input('swa_id');
+			$user->vatsim_cid = $request->input('vatsim_cid');
 	    	$user->crew_base = $request->input('crew_base');
     		$user->roles = $request->input('roles');
     		$user->save();
