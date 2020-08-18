@@ -52,7 +52,7 @@
 				<a class="nav-link" href="/contact">Contact</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="/roster/index">Roster</a>
+				<a class="nav-link" href="/roster">Roster</a>
 			</li>
 
 			<!-- Logout -->
@@ -69,7 +69,7 @@
 						<h6 class="dropdown-header">
 								Flight
 						</h6>
-						<a class="dropdown-item" href="/airport/index">
+						<a class="dropdown-item" href="/airport">
 							Airports
 						</a>
 						<a class="dropdown-item" href="/schedule">
@@ -81,7 +81,7 @@
 						<h6 class="dropdown-header">
 							Dispatch
 						</h6>
-						<a class="dropdown-item" href="/booking/index">
+						<a class="dropdown-item" href="/booking">
 							Booking
 						</a>
 						<div class="dropdown-divider"></div>

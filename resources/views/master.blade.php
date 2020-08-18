@@ -80,7 +80,7 @@
 				<a class="nav-link" href="/policy">Policy</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="/roster/index">Roster</a>
+				<a class="nav-link" href="/roster">Roster</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="/staff">Staff</a>
@@ -102,7 +102,7 @@
 						<a class="dropdown-item" href="/schedule">
 								Schedule
 					    </a>
-						<a class="dropdown-item" href="airport/index">
+						<a class="dropdown-item" href="/airport">
 								Airports
 						</a>
 					    <div class="dropdown-divider"></div>
@@ -111,7 +111,7 @@
 						<h6 class="dropdown-header">
 							Dispatch
 						</h6>
-						<a class="dropdown-item" href="/booking/index">
+						<a class="dropdown-item" href="/booking/">
 							Booking
 						</a>
 						<div class="dropdown-divider"></div>
