@@ -31,7 +31,11 @@
 			@if(Auth::user()->staff == 2)
 					<td>{{$u->vatsim_cid}}</td>
 					<td><a href="/roster/{{$u->id}}/edit" style="display:inline-block;" class="btn btn-success btn-xs simple-tooltip" title="Edit"><i class="far fa-edit"></i></a>
+<<<<<<< HEAD
 				    	<a href="/roster/{{$u->id}}/delete" style="display:inline-block;" onclick="return confirm('Are you sure?')" class="btn btn-danger btn-xs simple-tooltip" title="Delete"><i class="fa fa-times"></i></a>
+=======
+				    	<a href="/roster/{{$u->id}}/delete" style="display:inline-block;" class="btn btn-danger btn-xs simple-tooltip" title="Delete"><i class="fa fa-times"></i></a>
+>>>>>>> 1510ab792e16b08054f0ea2069f72fc8bd1756e7
 			@endif
 			@endauth
 		       		       </td>

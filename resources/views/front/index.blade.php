@@ -40,6 +40,10 @@
 	@endif
 	<h3 style="text-align:center; color:white;">Would you like to help us stay on track for a record year? <br> Donate here</h3>
 	<br>
+<<<<<<< HEAD
 	<h5 style="text-align:center; color:white;">Wallet Address: 1az3uefj51uSBJ4aozKL7uPYugdVi31DX </h5>
+=======
+	<h5 style="text-align:center; color:white;">Wallet Address: 3Mszd2uk1XgCu3syTZ51gpieyyuoToKL2K </h5>
+>>>>>>> 1510ab792e16b08054f0ea2069f72fc8bd1756e7
 </div>
 @endsection

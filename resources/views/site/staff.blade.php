@@ -9,7 +9,11 @@
     <h5 class="card-title">Josh Hooker</h5>
     <p class="card-text" style="padding:0px;">Chief Technical Officer</p>
     <p class="card-text">
+<<<<<<< HEAD
     <i class="fas fa-terminal"></i> College Student && Software/Web Dev.  </p>
+=======
+    <i class="fas fa-terminal"></i> High School student && Software/Web Dev.  </p>
+>>>>>>> 1510ab792e16b08054f0ea2069f72fc8bd1756e7
     <a href="#" class="card-link">josh.hooker@vswalife.com</a>
   </div>
 </div>

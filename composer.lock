@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "cc5923af6b09030d7f6729630c3757b7",
+=======
+    "content-hash": "a3d1c1683d77c0cdbabf84b21570cfab",
+>>>>>>> 1510ab792e16b08054f0ea2069f72fc8bd1756e7
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -2572,6 +2576,7 @@
         },
         {
             "name": "symfony/http-kernel",
+<<<<<<< HEAD
             "version": "v4.4.13",
             "source": {
                 "type": "git",
@@ -2582,6 +2587,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/http-kernel/zipball/2bb7b90ecdc79813c0bf237b7ff20e79062b5188",
                 "reference": "2bb7b90ecdc79813c0bf237b7ff20e79062b5188",
+=======
+            "version": "v4.4.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/http-kernel.git",
+                "reference": "a675d2bf04a9328f164910cae6e3918b295151f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/a675d2bf04a9328f164910cae6e3918b295151f3",
+                "reference": "a675d2bf04a9328f164910cae6e3918b295151f3",
+>>>>>>> 1510ab792e16b08054f0ea2069f72fc8bd1756e7
                 "shasum": ""
             },
             "require": {
@@ -2659,7 +2676,11 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "time": "2020-09-02T08:09:29+00:00"
+=======
+            "time": "2020-07-24T04:10:09+00:00"
+>>>>>>> 1510ab792e16b08054f0ea2069f72fc8bd1756e7
         },
         {
             "name": "symfony/mime",
