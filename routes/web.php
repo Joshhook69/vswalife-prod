@@ -85,7 +85,7 @@ Route::prefix('api')->group(function() {
 Route::prefix('booking')->middleware('auth')->group(function(){
 	Route::get('/', 'Booking\BookingController@index')->name('booking.index');
 	Route::get('/create', 'Booking\BookingController@createIndex');
-    Route::post('/create', 'Booking\BookingController@create');
+        Route::post('/create', 'Booking\BookingController@create');
 	Route::get('/view', 'Booking\BookingController@view');
 	Route::get('/search', 'Booking\BookingController@search');
 });
@@ -94,17 +94,19 @@ Route::prefix('booking')->middleware('auth')->group(function(){
 Route::get('/commandments', 'CommandmentsController@index');
 Route::get('/test', 'CommandmentsController@test');
 //atc commandments and the upcoming users admission test
-
-Route::prefix('roster')->middleware('auth')->group(function(){
+Route::prefix('roster')->group(function(){
 	Route::get('/', 'RosterController@index')->name('roster.index');
-	Route::get('/{id}/edit', 'RosterController@edit')->name('roster.edit');
-	Route::get('/{id}/delete', 'RosterController@destroy')->name('roster.destroy');
+});
+
 //	Route::get('/email', 'RosterController@email')->name('roster.email');
 //only to get the email list for mass mail
 	//Route::get('/{id}/update', 'RosterController@update')->name('roster.update');
+
+Route::prefix('roster')->middleware('auth')->group(function(){
+	Route::get('/{id}/edit', 'RosterController@edit')->name('roster.edit');
+	Route::get('/{id}/delete', 'RosterController@destroy')->name('roster.destroy');
 	Route::post('/{id}/update', 'RosterController@update')->name('roster.update');
 });
-//roster and edit(edit doesn't work)
 
 Route::get('/contact', 'FrontController@contact');
 Route::get('/dispatch', 'DispatchController@index');

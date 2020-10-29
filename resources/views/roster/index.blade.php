@@ -1,9 +1,9 @@
 @extends('light')
 @section('content')
 <div class="container">
-<div class="jumbotron jumbotron-fluid" style="background-color:#F9F9F9;">
+<div class="jumbotron jumbotron-fluid" style="background-color:#ffffff;">
   <div class="container">
-    <h1 class="display-4" style="text-align:center; margin-top:5%; background-color:#F9F9F9;">Roster</h1>
+    <h1 class="display-4" style="text-align:center; margin-top:5%; background-color:#ffffff;">Roster</h1>
 </div>
 </div>
 	<table class="table table-borderless">

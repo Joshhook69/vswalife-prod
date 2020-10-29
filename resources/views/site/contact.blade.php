@@ -2,9 +2,9 @@
 @section('title', 'Welcome')
 @section('content')
 <div class="container">
-<div class="jumbotron jumbotron-fluid" style="background-color:#F9F9F9;">
+<div class="jumbotron jumbotron-fluid" style="background-color:#ffffff;">
   <div class="container">
-    <h1 class="display-4" style="text-align:center; margin-top:5%; background-color:#F9F9F9;">Contact Us</h1>
+    <h1 class="display-4" style="text-align:center; margin-top:5%; background-color:#ffffff;">Contact Us</h1>
     <h5 class="display-5" style="text-align:center; margin-top:5%;">Check your spam</h5>
     </div>
   </div>
