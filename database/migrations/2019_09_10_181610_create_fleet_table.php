@@ -22,7 +22,6 @@ class CreateFleetTable extends Migration
             $table->integer('built');
             $table->string('delivery', 11);
             $table->string('status', 9);
-            $table->timestamps();
         });
     }
 

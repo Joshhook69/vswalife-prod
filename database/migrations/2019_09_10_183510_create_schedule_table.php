@@ -19,6 +19,7 @@ class CreateScheduleTable extends Migration
             $table->integer('departuretime', '16');
             $table->integer('arrivaltime', '16');
             $table->string('altitude', '16')->nullable(true)->default(null);
+            $table->string('distance', '16')
             $table->string('flight_time', '16');
             $table->string('aircrafttype', '16');
             $table->timestamps();

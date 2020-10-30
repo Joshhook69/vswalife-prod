@@ -14,6 +14,8 @@ class CreateUsersTable extends Migration {
         Schema::create('users', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name', '255');
+            $table->dateTime('last_login_at');
+            $table->string('last_login_ip', '96');
             $table->string('email', '255')->unique();
             $table->string('swa_id', '7')->default(Pending);
             $table->string('crew_base', '9')->nullable(true)->default(null);
