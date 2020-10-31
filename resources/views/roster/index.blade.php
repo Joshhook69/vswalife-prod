@@ -2,9 +2,6 @@
 @section('content')
 <div class="container">
 <div class="jumbotron jumbotron-fluid" style="background-color:#f8fafc;">
-  <div class="container">
-    <h1 class="display-4" style="text-align:center; margin-top:5%; background-color:#f8fafc;">Roster</h1>
-</div>
 </div>
 	<table class="table table-borderless">
 		<thead>

@@ -1,12 +1,6 @@
 @extends('light')
 @section('content')
-<div class="container">
-<div class="jumbotron jumbotron-fluid" style="padding-bottom:0; background-color:#f8fafc;">
-  <div class="container">
-    <h1 class="display-4" style="text-align:center;  margin-right:10%; margin-top:5%;">Schedule</h1>
-	<small style="">*Times are in zulu time</small>
-    </div>
-  </div>
+<small style="padding-left:15%;">*Times are in zulu time</small>
 <div class="container">
 <table class="table table-borderless">
   <thead>
