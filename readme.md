@@ -26,3 +26,4 @@ $ php artisan preset react
 $ composer require ipinfo/laravel
 
 ```
+project abandoned due to guy who was paying me stopped, and then vulnerabilites that needed to get patched weren't due to me not working on it and I took the project offline for the safety of our users data.
